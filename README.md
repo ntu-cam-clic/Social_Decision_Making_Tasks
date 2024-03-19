@@ -32,10 +32,9 @@ Files in this GitHub repository:
 Here are a few steps for transferring these tasks into your Qualtrics account (You need to have access to a Qualtrics account with full license, which allows for customary JavaScript.):
 1.	Download the socialDMtasks_ScientificData.qsf file to your local computer.
 2.	Import the .qsf file to your Qualtrics account.
- 
+![picture alt](https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/ImportQSF.png)
 3.	Now you are ready to publish this project and run data collection.
  
-
 After you have collected some data, you can export them into your local drive and use the scripts in the folder “example_Code_Data_Preprocessing” to do preprocessing and generate more readable data.
 Please select “Use numeric values” when you download the data file from Qualtrics:
-
+![picture alt](https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/downloadDatatable.png)

@@ -447,7 +447,7 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
             Badcase_dura=rep(0,each=numsub);    # this filter for all tasks except SVO will be replaced by the same variable that appears later.
             Badcase_dura[BadcaseIdx>=1]=1;      # Participant with very short RT in any round/question will be printed in the console
             print('Participants with short RT (only for SVO rounds and quizzes of other tasks):');
-            print(PID[BadcaseIdx==1]);
+            print(PID[BadcaseIdx>=1]);
           ###############################################################
     
   }  # end of if this task has QIDs
@@ -553,7 +553,7 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
           Badcase_dura=rep(0,each=numsub);    # this filter for all tasks except SVO will be replaced by the same variable that appears later.
           Badcase_dura[BadcaseIdx>=1]=1;      # Participant with very short RT in any round/question will be printed in the console
           print('Participants with short RT (In formal rounds of tasks except SVO):');
-          print(PID[BadcaseIdx==1]);
+          print(PID[BadcaseIdx>=1]);
           ###############################################################
   } # end of if this is a task with JavaScript
   

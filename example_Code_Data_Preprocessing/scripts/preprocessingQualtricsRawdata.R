@@ -513,7 +513,10 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
           ## In the preprocessed CSV files, we still show the original responses, but the 20% missing filter may indicate that more than
           ## 20% data (formal rounds) are missing for this task. 
           nameStrings=unlist(questionnaireLevelVariables[t]); # strings of variable names
-          
+                    
+          Responses_oneTask_allSub_raw=Responses_oneTask_allSub; # Here keep the original raw scores using a different variable
+          # We will use this raw scores variable to construct the preprocessed data file. 
+   
           # for tasks with multiple rounds on one page, use the timing for the last click on that page
           if (sum(str_detect(nameStrings,'RPp_')) 
               || sum(str_detect(nameStrings,'RPn_')) 
@@ -532,9 +535,6 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
           }else{
             DurationMeasure=RT_oneTask_allSub;
           }
-          
-          Responses_oneTask_allSub_raw=Responses_oneTask_allSub; # Here keep the original raw scores using a different variable
-          # We will use this raw scores variable to construct the preprocessed data file. 
           
           BadcaseIdx=rep(0,each=numsub);
           for (numRT in c(1:dim(DurationMeasure)[2])){
@@ -762,7 +762,7 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
   
   
   myMatNames         = c('PID',
-                         head(nameStrings,-2), # delete the last two columns
+                         head(nameStrings,-1), # delete the last column (Now it has the score and transitivity(SVO) for this task.)See "questionnaireLevelVariables".
                          paste0('Badcase_dura_',questionnaireNames[t]),
                          nameStrings[str_detect(nameStrings,'_MISS')],
                          response_mat_names,

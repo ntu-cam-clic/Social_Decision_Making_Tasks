@@ -29,14 +29,15 @@ We also share a dataset of responses from 292 participants in 12 decision-making
 * In the “**data&codebook**” folder, there are 12 csv files each containing responses from 392 participants in one decision-making task, along with a file with detailed demographics (“**demographics.csv**”) and a codebook (“**codebook.csv**”).
 * The folder “**example_Code_Data_Preprocessing**” contains an example raw dataset from Qualtrics and a script for preprocessing the raw data. The reader can collect their own data using the   
 
-##
+## Importing QSF file into Qualtrics
 Here are a few steps for transferring these tasks into your Qualtrics account (You need to have access to a Qualtrics account with full license, which allows for customary JavaScript.):
 1.	Download the **socialDMtasks_ScientificData.qsf** file to your local computer.
 2.	Import the .qsf file to your Qualtrics account.
 <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/ImportQSF.png" alt="alt text" width="500">
 
-4.	Now you are ready to publish this project and run data collection.
- 
+3.	Now you are ready to publish this project and run data collection.
+
+## Preprocessing data from Qualtrics
 After you have collected some data, you can export them into your local drive and use the scripts in the folder “example_Code_Data_Preprocessing” to do preprocessing and generate more readable data.
 Please select “Use numeric values” when you download the data file from Qualtrics:
 

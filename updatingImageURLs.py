@@ -11,10 +11,6 @@ To edit the header of a Qualtrics project:
 You can copy all the code into a newly created file named "QualtricsHeader.js".
 Here, the script reads in each line of the file "QualtricsHeader.js", changes the lines with URL links to the desired format, 
 and writes them into a new file "QualtricsHeaderUpdated.js". 
-Note that in the URL of the updated file, a "+" sign was added, otherwise the links can't be saved in Qualtrics header. 
-An example of the link is like this: 
-URL_TGb_mainImg_round2=
-"https:"+"//raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/Images/Trust%20Game%20(as%20Player%20B)/TGb_mainImg_round2.png";
 Then you can copy the code in the updated file and replace the code in the header window of Qualtrics. 
 
 Note that the links to the images on GitHub have a very regular format, making them easy to update.
@@ -37,10 +33,10 @@ with open('QualtricsHeader.js','r') as file:
 with open('QualtricsHeaderUpdated.js','w') as file:
     for line in lines:
         URLorNot=re.search('URL_',line);  # search if there is a URL link for each line
-        equalSign=re.search('="',line);
-        if (URLorNot and equalSign):
+        SRCorNot=re.search('.src',line);  # search if the string "src" appears for each line
+        if (URLorNot and SRCorNot):
            index1=URLorNot.span()[1];
-           index2=equalSign.span()[0]; 
+           index2=SRCorNot.span()[0]; 
            # here deal with different tasks, as images for different task are stored in different subfolders
            if (re.search('_AA_',line)):
               subfolderName='Ambiguity%20Aversion/';
@@ -75,7 +71,7 @@ with open('QualtricsHeaderUpdated.js','w') as file:
               endString='.gif";\n';
            else:
               endString='.png";\n';
-           outputLine=''.join(['URL_',imageName,'="',imagesRootPath1,'"+"',imagesRootPath2,subfolderName,imageName,endString]); # update the line
+           outputLine=''.join(['URL_',imageName,'.src="',imagesRootPath1,imagesRootPath2,subfolderName,imageName,endString]); # update the line
            print(outputLine); # optional; checking the names in console.
         else:
            outputLine=line;

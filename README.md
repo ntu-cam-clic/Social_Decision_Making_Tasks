@@ -39,7 +39,7 @@ Here are a few steps for transferring these tasks into your Qualtrics account (Y
 <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/ImportQSF.png" alt="alt text" width="500">
 
 3.	Now you are ready to publish this project and run data collection.
-## Tailoring the tasks on Qualtrics to suit your study
+## Tailoring the tasks on Qualtrics to suit your own study
 *Changing task images
 
 *Changing payoffs of participants' reponses

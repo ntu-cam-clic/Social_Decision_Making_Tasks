@@ -1,18 +1,19 @@
 # Social-Decision-Making-Tasks
 Scripts and images for implementing decision-making tasks on Qualtrics.
 We also share a dataset of responses from 292 participants in 12 decision-making tasks, inlcuding:
-* Social value orientation task (**SVO**)
-* Prisoner’s dilemma game (**PD**)
-* Stag hunt game (**SH**)
-* Battle of sexes game (**BS**) 
+* Risk preference task (positive domain; **PRp**)
+* Risk preference task (negative domain; **RPn**)
+* Risk preference task (mixed domain; **RPm**)
+* Ambiguity aversion task (**AA**)* Social value orientation task (**SVO**)
 * Risky dictator game (**RD**)
 * Trust game (with choice history; **TG**)
 * Trust game (with no choice history; **TGnh**)
 * Trust game (as Player B; **TGb**)
-* Risk preference task (positive domain; **PRp**)
-* Risk preference task (negative domain; **RPn**)
-* Risk preference task (mixed domain; **RPm**)
-* Ambiguity aversion task (**AA**)
+* Prisoner’s dilemma game (**PD**)
+* Stag hunt game (**SH**)
+* Battle of sexes game (**BS**) 
+
+
 
 ## Key components of a Qualtrics project:
 To implement the above-mentioned tasks on Qualtrics, you should know the following components of a Qualtrics project:

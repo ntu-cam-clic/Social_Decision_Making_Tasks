@@ -39,6 +39,12 @@ Here are a few steps for transferring these tasks into your Qualtrics account (Y
 <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/ImportQSF.png" alt="alt text" width="500">
 
 3.	Now you are ready to publish this project and run data collection.
+## Tailoring the tasks on Qualtrics to suit your study
+*Changing task images
+
+*Changing payoffs of participants' reponses
+
+*Changing feedback
 
 ## Preprocessing data from Qualtrics
 After you have collected some data, you can export them into your local drive and use the scripts in the folder “example_Code_Data_Preprocessing” to do preprocessing and generate more readable data.

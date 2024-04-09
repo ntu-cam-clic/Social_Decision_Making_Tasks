@@ -17,7 +17,7 @@ We also share a dataset of responses from 292 participants in 12 decision-making
 
 
 ## Key components of a Qualtrics project:
-To implement the above-mentioned tasks on Qualtrics, you should know the following components of a Qualtrics project:
+To implement the above-mentioned tasks on Qualtrics, having a basic knowledge of the following Qualtrics components is a pre-requisite:
 1.	Survey questions, which offer the basic functionality to build an interface of a question or a task trial. (https://www.qualtrics.com/support/survey-platform/survey-module/editing-questions/formatting-questions/)
 2.	JavaScript, which enables more flexible coding, such as adding if-else condition and controlling timing of stimuli presentation. (https://www.qualtrics.com/support/survey-platform/survey-module/question-options/add-javascript/) 
 3.	Survey header, which allows importing JavaScript libraries and setting code that will run for each page of the survey. (https://www.qualtrics.com/support/survey-platform/survey-module/look-feel/general-look-feel-settings/#AddFooterHeader)

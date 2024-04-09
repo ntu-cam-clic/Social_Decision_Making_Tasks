@@ -41,11 +41,12 @@ Here are a few steps for transferring these tasks into your Qualtrics account (Y
 3.	Now you are ready to publish this project and run data collection.
 ## Tailoring the tasks on Qualtrics to suit your own study
 You can use a subset of the tasks and tailor them to your own needs. You can also create your own tasks from scratch by using our tasks as a template.
-*Changing task images
 
-*Changing payoffs of participants' reponses
+***Changing task images**
 
-*Changing feedback
+***Changing payoffs of participants' reponses**
+
+***Changing feedback**
 
 ## Preprocessing data from Qualtrics
 After you have collected some data, you can export them into your local drive and use the scripts in the folder “example_Code_Data_Preprocessing” to do preprocessing and generate more readable data.

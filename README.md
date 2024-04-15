@@ -51,7 +51,9 @@ You can use a subset of the tasks and tailor them to your own needs. You can als
     --> "General" 
     --> click "edit" under "Header"
     --> click the "source" icon between the underline icon and "Less...", and you will see the header code.
+  
   <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/headerImage.png" alt="alt text" width="800">
+  
   Since Quialtrics' header window is not suitable for code editing, you can copy and paste the code into a code editor of your chocie. 
   Here we use Notepad++:
   

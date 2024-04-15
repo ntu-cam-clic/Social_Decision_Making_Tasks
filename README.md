@@ -51,8 +51,7 @@ To view and edit the header of a Qualtrics project:
     --> "General" 
     --> click "edit" under "Header"
     --> click the "source" icon between the underline icon and "Less...", and you will see the header code.
-<img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/downloadDatatable.png" alt="alt text" width="400">
-
+<img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/headerImage.png" alt="alt text" width="500">
 * **Changing payoffs of participants' reponses**
 
 * **Changing feedback**

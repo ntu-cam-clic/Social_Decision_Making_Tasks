@@ -66,7 +66,7 @@ If you want to change the payoffs/points gained by the participants, you can mod
 
 * **Changing feedback**
 
-You can also change the distribution of the round-by-round feedback: 
+You can also change the distribution of the round-by-round feedback:
 <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/changingFeedback.png" alt="alt text" width="500">
 
 

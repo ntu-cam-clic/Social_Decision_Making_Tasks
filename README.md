@@ -54,8 +54,8 @@ You can use a subset of the tasks and tailor them to your own needs. You can als
   
   <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/headerImage.png" alt="alt text" width="800">
   
-  Since Quialtrics' header window is not suitable for code editing, you can copy and paste the code into a code editor of your chocie. 
-  Here we use Notepad++:
+  Since Quialtrics' header window is not suitable for code editing, you can copy and paste the code into a code editor of your chocie. After editing, you can paste into the header window and save.
+  For example, you can use Notepad++:
   
   <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/URLlinks.png" alt="alt text" width="500">
   
@@ -71,7 +71,7 @@ You can use a subset of the tasks and tailor them to your own needs. You can als
 
 * **Changing feedback**
 
-  You can also change the distribution of the round-by-round feedback.
+  In the header, you can also change the distribution of the round-by-round feedback.
   
   <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/changingFeedback.png" alt="alt text" width="500">
 

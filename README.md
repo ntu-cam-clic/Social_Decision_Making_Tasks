@@ -43,8 +43,15 @@ Here are a few steps for transferring these tasks into your Qualtrics account (Y
 You can use a subset of the tasks and tailor them to your own needs. You can also create your own tasks from scratch by using our tasks as a template.
 
 * **Changing task images**
-After you have imported the .qsf file to your Qualtrics account and created a project, you can view the survey header:
-
+  
+After you have imported the .qsf file to your Qualtrics account and created a project, you can view the header.
+To view and edit the header of a Qualtrics project: 
+    Click the "Survey" tab of that project 
+    --> "Look and feel" 
+    --> "General" 
+    --> click "edit" under "Header"
+    --> click the "source" icon between the underline icon and "Less...", and you will see the header code.
+<img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/downloadDatatable.png" alt="alt text" width="400">
 
 * **Changing payoffs of participants' reponses**
 

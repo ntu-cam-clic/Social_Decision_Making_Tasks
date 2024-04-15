@@ -43,6 +43,8 @@ Here are a few steps for transferring these tasks into your Qualtrics account (Y
 You can use a subset of the tasks and tailor them to your own needs. You can also create your own tasks from scratch by using our tasks as a template.
 
 * **Changing task images**
+After you have imported the .qsf file to your Qualtrics account and created a project, you can view the survey header:
+
 
 * **Changing payoffs of participants' reponses**
 

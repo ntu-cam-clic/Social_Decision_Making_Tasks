@@ -19,8 +19,20 @@ We also share a dataset of responses from 292 participants in 12 decision-making
 ## Key components of a Qualtrics project:
 To implement the above-mentioned tasks on Qualtrics, having a basic knowledge of the following Qualtrics components is a pre-requisite:
 1.	Survey questions, which offer the basic functionality to build an interface of a question or a task trial. (https://www.qualtrics.com/support/survey-platform/survey-module/editing-questions/formatting-questions/)
-2.	JavaScript, which enables more flexible coding, such as adding if-else condition and controlling timing of stimuli presentation. (https://www.qualtrics.com/support/survey-platform/survey-module/question-options/add-javascript/) 
+    A survey question can be shown in "HTML view" or "normal view". You can directly edit the question in either view.
+    <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/HTML&JSwindow.png" alt="alt text" width="800">
+2.	JavaScript, which enables more flexible coding, such as adding if-else condition and controlling timing of stimuli presentation. (https://www.qualtrics.com/support/survey-platform/survey-module/question-options/add-javascript/)
+    In the above figure, you can add code in the JavaScript window.
 3.	Survey header, which allows importing JavaScript libraries and setting code that will run for each page of the survey. (https://www.qualtrics.com/support/survey-platform/survey-module/look-feel/general-look-feel-settings/#AddFooterHeader)
+    To view and edit the header of a Qualtrics project: \
+    Click the "Survey" tab of that project\ 
+    --> "Look and feel"\ 
+    --> "General"\ 
+    --> click "edit" under "Header"\
+    --> click the "source" icon between the underline icon and "Less...", and you will see the header code.
+  
+    <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/headerImage.png" alt="alt text" width="800">
+   
 4.	CSS, which can help you to customize the appearance of your survey questions or tasks. (https://www.qualtrics.com/support/survey-platform/survey-module/look-feel/look-feel-overview/)
 5.	Embedded data, which can be used to record extra information such as responses, accuracy, and timing of feedback in task trials. (https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/embedded-data/) 
 6.	Library, which stores graphics and other file types that can be used for your surveys or tasks. (https://www.qualtrics.com/support/survey-platform/account-library/library-overview/)
@@ -45,15 +57,6 @@ You can use a subset of the tasks and tailor them to your own needs. You can als
 * **Changing task images**
   
   After you have imported the .qsf file to your Qualtrics account and created a project, you can view the header.
-  To view and edit the header of a Qualtrics project: 
-    Click the "Survey" tab of that project 
-    --> "Look and feel" 
-    --> "General" 
-    --> click "edit" under "Header"
-    --> click the "source" icon between the underline icon and "Less...", and you will see the header code.
-  
-  <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/headerImage.png" alt="alt text" width="800">
-  
   Since Quialtrics' header window is not suitable for code editing, you can copy and paste the code into a code editor of your chocie. After editing, you can paste into the header window and save.
   For example, you can use Notepad++:
   
@@ -76,9 +79,6 @@ You can use a subset of the tasks and tailor them to your own needs. You can als
 * **Changing payoffs of participants' reponses**
 
   If you want to change the payoffs/points gained by the participants, you can modify the related lines in the JavaScript code of the task round/question.
-
-  
-  <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/HTML&JSwindow.png" alt="alt text" width="800">
 
 
   <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/Outcomes.png" alt="alt text" width="500">

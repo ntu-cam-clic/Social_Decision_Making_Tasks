@@ -18,7 +18,7 @@ We also share a dataset of responses from 292 participants in 12 decision-making
 
 ## Key components of a Qualtrics project:
 To implement the above-mentioned tasks on Qualtrics, having a basic knowledge of the following Qualtrics components is a pre-requisite:
-1.	Survey questions, which offer the basic functionality to build an interface of a question or a task trial (https://www.qualtrics.com/support/survey-platform/survey-module/editing-questions/formatting-questions/)./
+1.	Survey questions, which offer the basic functionality to build an interface of a question or a task trial (https://www.qualtrics.com/support/survey-platform/survey-module/editing-questions/formatting-questions/).
     A survey question can be shown in "HTML view" or "normal view". You can directly edit the question in either view.
     <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/HTML&JSwindow.png" alt="alt text" width="800">
 3.	JavaScript, which enables more flexible coding, such as adding if-else condition and controlling timing of stimuli presentation(https://www.qualtrics.com/support/survey-platform/survey-module/question-options/add-javascript/).

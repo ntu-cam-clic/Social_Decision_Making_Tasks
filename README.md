@@ -62,18 +62,22 @@ You can use a subset of the tasks and tailor them to your own needs. You can als
   The images used in these tasks are stored in this Github repo, and their URL links are pasted into the header. The above screenshot shows some of the links. If you copy the images to your own GitHub account, the script “updatingImageURLs.py” can be used to update the URL links in the header.
   Alternatively, you can store the images in the library of your Qualtrics account and replace the URLs in the header.
 
+* **Changing feedback**
+
+  In the header, you can also change the feedback the risky options. The risky options have two possible outcomes with certain probabilities. Which outcome will be shown to participants can be controlled here.
+  There are three ways:
+      1. The outcomes are hardcoded (i.e., for instance a choice will always give $8),
+      2. The outcomes are pseudo-randomized (i.e., the outcome is chosen from a set of possible outcomes), and
+      3. the outcomes are fully randomized (i.e., on each round and separately for each participant, the script will calculate the outcome based on a given probability).
+  
+  <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/changingFeedback.png" alt="alt text" width="500">
+
 
 * **Changing payoffs of participants' reponses**
 
   If you want to change the payoffs/points gained by the participants, you can modify the related lines in the JavaScript code of the task round/question.
   
   <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/Outcomes.png" alt="alt text" width="500">
-
-* **Changing feedback**
-
-  In the header, you can also change the distribution of the round-by-round feedback.
-  
-  <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/changingFeedback.png" alt="alt text" width="500">
 
 ## Preprocessing data from Qualtrics
 After you have collected some data, you can export them into your local drive and use the scripts in the folder “example_Code_Data_Preprocessing” to do preprocessing and generate more readable data.

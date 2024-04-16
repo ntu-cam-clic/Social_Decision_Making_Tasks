@@ -23,7 +23,7 @@ To implement the above-mentioned tasks on Qualtrics, having a basic knowledge of
    <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/HTML&JSwindow.png" alt="alt text" width="800">
    
 2.	JavaScript, which enables more flexible coding, such as adding if-else condition and controlling timing of stimuli presentation (https://www.qualtrics.com/support/survey-platform/survey-module/question-options/add-javascript/).<br>
-   In the above figure, you can open the JavaScript window by clicking the symbol "<\*\\*>".
+   In the above figure, you can open the JavaScript window by clicking the symbol \*"<\>"\*.
   	
 3.	Survey header, which allows importing JavaScript libraries and setting code that will run for each page of the survey (https://www.qualtrics.com/support/survey-platform/survey-module/look-feel/general-look-feel-settings/#AddFooterHeader).<br>
    To view and edit the header of a Qualtrics project:<br>

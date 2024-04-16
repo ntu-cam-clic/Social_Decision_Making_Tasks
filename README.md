@@ -59,7 +59,7 @@ You can use a subset of the tasks and tailor them to your own needs. You can als
   
   <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/URLlinks.png" alt="alt text" width="500">
   
-  The images used in these tasks are stored in this Github repo, and their URL links are pasted into the header. The above screenshot shows some of the links.
+  The images used in these tasks are stored in this Github repo, and their URL links are pasted into the header. The above screenshot shows some of the links. If you copy the images to your own GitHub account, the script “updatingImageURLs.py” can be used to update the URL links in the header.
   Alternatively, you can store the images in the library of your Qualtrics account and replace the URLs in the header.
 
 

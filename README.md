@@ -76,6 +76,8 @@ You can use a subset of the tasks and tailor them to your own needs. You can als
 * **Changing payoffs of participants' reponses**
 
   If you want to change the payoffs/points gained by the participants, you can modify the related lines in the JavaScript code of the task round/question.
+
+  
   <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/HTML&JSwindow.png" alt="alt text" width="800">
 
 

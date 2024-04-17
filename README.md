@@ -1,6 +1,9 @@
-# Social-Decision-Making-Tasks
-Scripts and images for implementing decision-making tasks on Qualtrics.
-We also share a dataset of responses from 292 participants in 12 decision-making tasks, inlcuding:
+#Implementation of decision-making tasks on Qualtrics
+Scripts and images for implementing the following 12 decision-making tasks on Qualtrics.
+We also share a dataset of responses from 292 participants in these decision-making tasks
+
+
+## Social decision-making tasks
 * Risk preference task (positive domain; **PRp**)
 * Risk preference task (negative domain; **RPn**)
 * Risk preference task (mixed domain; **RPm**)

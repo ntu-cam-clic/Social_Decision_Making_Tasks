@@ -39,11 +39,11 @@ To implement the above-mentioned tasks on Qualtrics, having a basic knowledge of
     <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/CSSwindow.png" alt="alt text" width="800">
     
 5.	Embedded data, which can be used to record extra information such as responses, accuracy, and timing of feedback in task trials (https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/embedded-data/).
-
+   In the following figure, four variables (in the red rectangle) have been created as embedded data. Values of these variables will be recorded in the data file.
     <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/EmbeddedData.png" alt="alt text" width="800">
     
 6.	Library, which stores graphics and other file types that can be used for your surveys or tasks (https://www.qualtrics.com/support/survey-platform/account-library/library-overview/). 
-
+   In the following figure, the URL link of an image can be copied by clicking on "Copy link" in the red rectangle. 
    <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/Library.png" alt="alt text" width="800">
     
     

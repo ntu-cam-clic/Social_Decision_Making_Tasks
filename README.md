@@ -77,9 +77,9 @@ You can use a subset of the tasks and tailor them to your own needs. You can als
 
 * **Changing feedback**
 
-  In the header, you can also change the feedback the risky options. The risky options have two possible outcomes with certain probabilities. Which outcome will be shown to participants can be controlled here.
+  In the header, you can also change the feedback of the risky options. The risky options have two possible outcomes with certain probabilities (e.g., choosing a risky option entails an 80% chance of gaining 8 points and a 20% chance of gaining 15 points). Which outcome will be shown to participants can be controlled here.
   There are three ways:\
-      1. The outcomes are hardcoded (i.e., for instance a choice will always give $8),\
+      1. The outcomes are hardcoded (i.e., for instance a choice will always give 8 points),\
       2. The outcomes are pseudo-randomized (i.e., the outcome is chosen from a set of possible outcomes), and\
       3. the outcomes are fully randomized (i.e., on each round and separately for each participant, the script will calculate the outcome based on a given probability).
   

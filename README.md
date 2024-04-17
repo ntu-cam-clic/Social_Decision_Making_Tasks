@@ -82,7 +82,7 @@ You can use a subset of the tasks and tailor them to your own needs. You can als
   There are three ways:\
       1. A single set of pseudo-randomized outcomes (e.g., we can use 0 to represent that the 8 points are shown, and 1 to represent that 15 points are shown. This vector [0,0,0,1,0,1,0,1,1] can be used for all participants to hardcode the feedback. Choosing the risky option in a certain round will always give the same outcome),\
       2. Multiple sets of pseudo-randomized outcomes (e.g., we can have multiple vectors and one of them will be chosen for a particular participant), and\
-      3. the outcomes are fully randomized (i.e., on each round and separately for each participant, the script will calculate the outcome based on a given probability).
+      3. the outcomes are fully randomized (i.e., on each round and separately for each participant, the script will calculate the outcome based on a given probability).<br>
   These three ways are also denoted in the following figure. You can choose which way to use by changing the value of the variable RPp_pseudo_rand. Here we only discussed about risk preference task (positive domain), you can also choose values for this parameter in other tasks, including risk preference tasks (negative domain and mixed domain), ambiguity aversion, risky dicator, and trust game (with history). 
   
   <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/changingFeedback.png" alt="alt text" width="500">

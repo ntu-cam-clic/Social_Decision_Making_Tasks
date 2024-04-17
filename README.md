@@ -54,7 +54,7 @@ To implement the above-mentioned tasks on Qualtrics, having a basic knowledge of
 * In the “**data&codebook**” folder, there are 12 csv files each containing responses from 392 participants in one decision-making task, along with a file with detailed demographics (“**demographics.csv**”) and a codebook (“**codebook.csv**”).
 * The folder “**example_Code_Data_Preprocessing**” contains an example raw dataset from Qualtrics and a script for preprocessing the raw data. The reader can collect their own data using the   
 
-## Importing QSF file into Qualtrics
+## Importing the QSF file into Qualtrics
 Here are a few steps for transferring these tasks into your Qualtrics account (You need to have access to a Qualtrics account with full license, which allows for customary JavaScript.):
 1.	Download the **socialDMtasks_ScientificData.qsf** file to your local computer.
 2.	Import the .qsf file to your Qualtrics account.

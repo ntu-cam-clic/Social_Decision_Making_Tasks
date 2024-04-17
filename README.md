@@ -104,4 +104,4 @@ You can use a subset of the tasks and tailor them to your own needs. You can als
 After you have collected some data, you can export them into your local drive and use the scripts in the folder “example_Code_Data_Preprocessing” to do preprocessing and generate more readable data.
 Please select “Use numeric values” when you download the data file from Qualtrics:
 
-<img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/downloadDatatable.png" alt="alt text" width="400">
+<img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/downloadDatatable.png" alt="alt text" width="800">

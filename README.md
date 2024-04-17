@@ -18,14 +18,14 @@ We also share a dataset of responses from 292 participants in 12 decision-making
 
 ## Key components of a Qualtrics project:
 To implement the above-mentioned tasks on Qualtrics, having a basic knowledge of the following Qualtrics components is a pre-requisite:
-1.	Survey questions, which offer the basic functionality to build an interface of a question or a task trial (https://www.qualtrics.com/support/survey-platform/survey-module/editing-questions/formatting-questions/).<br>
+1.	Survey questions, which offer the basic functionality to build an interface of a question or a task trial (https://www.qualtrics.com/support/survey-platform/survey-module/editing-questions/formatting-questions/).<br><br>
    A survey question can be shown in "HTML view" or "normal view". You can directly edit the question in either view.
    <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/HTML&JSwindow.png" alt="alt text" width="800">
    
-2.	JavaScript, which enables more flexible coding, such as adding if-else condition and controlling timing of stimuli presentation (https://www.qualtrics.com/support/survey-platform/survey-module/question-options/add-javascript/).<br>
+3.	JavaScript, which enables more flexible coding, such as adding if-else condition and controlling timing of stimuli presentation (https://www.qualtrics.com/support/survey-platform/survey-module/question-options/add-javascript/).<br><br>
    In the above figure, you can open the JavaScript window by clicking the symbol "</>".
   	
-3.	Survey header, which allows importing JavaScript libraries and setting code that will run for each page of the survey (https://www.qualtrics.com/support/survey-platform/survey-module/look-feel/general-look-feel-settings/#AddFooterHeader).<br>
+4.	Survey header, which allows importing JavaScript libraries and setting code that will run for each page of the survey (https://www.qualtrics.com/support/survey-platform/survey-module/look-feel/general-look-feel-settings/#AddFooterHeader).<br><br>
    To view and edit the header of a Qualtrics project:<br>
    Click the "Survey" tab of that project<br>
    --> "Look and feel"<br> 
@@ -34,22 +34,18 @@ To implement the above-mentioned tasks on Qualtrics, having a basic knowledge of
    --> click the "source" icon between the underline icon and "Less...", and you will see the header code.<br>
    <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/headerImage.png" alt="alt text" width="800">
    
-4.	CSS, which can help you to customize the appearance of your survey questions or tasks (https://www.qualtrics.com/support/survey-platform/survey-module/look-feel/look-feel-overview/).<br>
+5.	CSS, which can help you to customize the appearance of your survey questions or tasks (https://www.qualtrics.com/support/survey-platform/survey-module/look-feel/look-feel-overview/).<br><br>
    For example, CSS can be used to set the positions and colors of customary buttons and texts. 
-    <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/CSSwindow.png" alt="alt text" width="800">
+   <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/CSSwindow.png" alt="alt text" width="800">
     
-5.	Embedded data, which can be used to record extra information such as responses, accuracy, and timing of feedback in task trials (https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/embedded-data/).
+6.	Embedded data, which can be used to record extra information such as responses, accuracy, and timing of feedback in task trials (https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/embedded-data/).<br><br>
    In the following figure, four variables (in the red rectangle) have been created as embedded data. Values of these variables will be recorded in the data file.
-    <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/EmbeddedData.png" alt="alt text" width="800">
+   <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/EmbeddedData.png" alt="alt text" width="800">
     
-6.	Library, which stores graphics and other file types that can be used for your surveys or tasks (https://www.qualtrics.com/support/survey-platform/account-library/library-overview/). 
-   In the following figure, the URL link of an image can be copied by clicking on "Copy link" in the red rectangle. 
+7.	Library, which stores graphics and other file types that can be used for your surveys or tasks (https://www.qualtrics.com/support/survey-platform/account-library/library-overview/).<br><br>
+   The following figure shows the library of Qualtrics. You can view the image and copy its URL link by clicking on "Copy link" in the red rectangle. 
    <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/Library.png" alt="alt text" width="800">
     
-    
-
-   
-
 
 ## Files in this GitHub repository: 
 * “**socialDMtasks_ScientificData.qsf**” is a “Qualtrics Survey Format” file, which contains the survey questions, Javascript, survey header, CSS, embedded data for the decision-making tasks and can be transferred to another Qualtrics account. Please note that if you import the .qsf file into your own account, the files (including images) in the library are not transferred. If the images in the original account are deleted, you will lose access to them.

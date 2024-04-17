@@ -84,7 +84,6 @@ You can use a subset of the tasks and tailor them to your own needs. You can als
   In the header, you can also set how the feedback of the risky options will be shown to participants.
   For example, in the risk preference task (positive domain), participants make nine rounds of choices between a sure gain of 10 points and a risky option with two possible outcomes (8 points or 15 points). For the risky option, the probability for winning 15 points increase from 10% to 90% across the nine rounds (e.g., In the 1st round, choosing the risky option entails an 10% chance of gaining 15 points and a 90% chance of gaining 8 points). Which outcome in each round will be shown to participants can be controlled here.
   There are three ways:<br><br>
-  
       1. A single set of pseudo-randomized outcomes (e.g., we can use 0 to represent that the 8 points are shown, and 1 to represent that 15 points are shown. This vector [0,0,0,1,0,1,0,1,1] can be used for all participants to hardcode the feedback. Choosing the risky option in a certain round will always give the same outcome),<br><br>
       2. Multiple sets of pseudo-randomized outcomes (e.g., we can have multiple vectors and one of them will be chosen for a particular participant), and<br><br>
       3. Fully randomized outcomes (i.e., on each round and separately for each participant, the script will calculate the outcome based on a given probability).<br><br>

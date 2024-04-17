@@ -34,8 +34,8 @@ To implement the above-mentioned tasks on Qualtrics, having a basic knowledge of
    --> click the "source" icon between the underline icon and "Less...", and you will see the header code.<br>
    <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/headerImage.png" alt="alt text" width="800">
    
-4.	CSS, which can help you to customize the appearance of your survey questions or tasks (https://www.qualtrics.com/support/survey-platform/survey-module/look-feel/look-feel-overview/).
-
+4.	CSS, which can help you to customize the appearance of your survey questions or tasks (https://www.qualtrics.com/support/survey-platform/survey-module/look-feel/look-feel-overview/).<br>
+   For example, CSS can be used to set the positions and colors of customary buttons and texts. 
     <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/CSSwindow.png" alt="alt text" width="800">
     
 5.	Embedded data, which can be used to record extra information such as responses, accuracy, and timing of feedback in task trials (https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/embedded-data/).

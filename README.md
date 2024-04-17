@@ -36,9 +36,20 @@ To implement the above-mentioned tasks on Qualtrics, having a basic knowledge of
    
 4.	CSS, which can help you to customize the appearance of your survey questions or tasks (https://www.qualtrics.com/support/survey-platform/survey-module/look-feel/look-feel-overview/).
 
+    <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/CSSwindow.png" alt="alt text" width="800">
     
-8.	Embedded data, which can be used to record extra information such as responses, accuracy, and timing of feedback in task trials (https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/embedded-data/).  
-9.	Library, which stores graphics and other file types that can be used for your surveys or tasks (https://www.qualtrics.com/support/survey-platform/account-library/library-overview/). 
+5.	Embedded data, which can be used to record extra information such as responses, accuracy, and timing of feedback in task trials (https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/embedded-data/).
+
+    <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/EmbeddedData.png" alt="alt text" width="800">
+    
+6.	Library, which stores graphics and other file types that can be used for your surveys or tasks (https://www.qualtrics.com/support/survey-platform/account-library/library-overview/). 
+
+   <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/Library.png" alt="alt text" width="800">
+    
+    
+
+   
+
 
 ## Files in this GitHub repository: 
 * “**socialDMtasks_ScientificData.qsf**” is a “Qualtrics Survey Format” file, which contains the survey questions, Javascript, survey header, CSS, embedded data for the decision-making tasks and can be transferred to another Qualtrics account. Please note that if you import the .qsf file into your own account, the files (including images) in the library are not transferred. If the images in the original account are deleted, you will lose access to them.

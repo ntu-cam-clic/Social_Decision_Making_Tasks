@@ -1,4 +1,5 @@
-#Implementation of decision-making tasks on Qualtrics
+# Implementation of Decision-Making Tasks on Qualtrics
+
 Scripts and images for implementing the following 12 decision-making tasks on Qualtrics.
 We also share a dataset of responses from 292 participants in these decision-making tasks
 
@@ -19,7 +20,7 @@ We also share a dataset of responses from 292 participants in these decision-mak
 
 
 
-## Key components of a Qualtrics project:
+## Key components of a Qualtrics project
 To implement the above-mentioned tasks on Qualtrics, having a basic knowledge of the following Qualtrics components is a pre-requisite:
 1.	Survey questions, which offer the basic functionality to build an interface of a question or a task trial (https://www.qualtrics.com/support/survey-platform/survey-module/editing-questions/formatting-questions/).<br><br>
    A survey question can be shown in "HTML view" or "normal view". You can directly edit the question in either view.

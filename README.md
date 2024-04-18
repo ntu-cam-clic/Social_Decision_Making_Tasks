@@ -49,7 +49,7 @@ To implement the above-mentioned tasks on Qualtrics, having a basic knowledge of
    <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/CSSwindow.png" alt="alt text" width="800">
     
 5.	Embedded data, which can be used to record extra information such as responses, accuracy, and timing of feedback in task trials (https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/embedded-data/).<br><br>
-   In the following figure, four variables (in the red rectangle) have been created as embedded data. Values of these variables will be recorded in the data file.
+   In the following figure, four variables (in the red rectangle) have been created as embedded data. Values of these variables will be recorded in the data file of Qualtrics (See the section "Preprocessing data from Qualtrics" below).
    <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/EmbeddedData.png" alt="alt text" width="800">
     
 6.	Library, which stores graphics and other file types that can be used for your surveys or tasks (https://www.qualtrics.com/support/survey-platform/account-library/library-overview/).<br><br>
@@ -93,7 +93,7 @@ You can use a subset of the tasks and tailor them to your own needs. You can als
 
 * **Changing payoffs of participants' reponses**
 
-  If you want to change the payoffs/points gained by the participants, you can modify the related lines in the JavaScript code of the task round/question.
+  If you want to change the payoffs/points gained by the participants, you can modify the related lines in the JavaScript code of the task round/question. For example, the code in the following figure shows that in the prisoner's dilemma game, when the participant presses the button "BLUE" and the opponent chooses "RED", the payoff for the participant is 6 and the payoff for the opponent is -6 (see the two lines of code in the upper red rectangle); when the opponent also chooses "BLUE", both players get the payoff of -3 (see code in the lower red rectangle).
 
 
   <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/Outcomes.png" alt="alt text" width="500">

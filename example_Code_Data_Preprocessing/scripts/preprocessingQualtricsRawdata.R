@@ -714,15 +714,12 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
     response_mat_names=unlist(Responses_roundLableList[t]);
   } #end of if for different tasks
   
-  ################# This section reverse the direction of some variables to make them measure cooperation or risk preference ######################
-  if (sum(str_detect(nameStrings,'TG_')) | sum(str_detect(nameStrings,'RD_'))){
-    oneQuestionnaire_scores=10-oneQuestionnaire_scores;  # trust preference for TG; risk preference for RD; here use 10 to make it comparable to RPp, because the 10th item is implied in RPp 
-  } else if (sum(str_detect(nameStrings,'TGnh_')) | sum(str_detect(nameStrings,'BS_'))){
-    oneQuestionnaire_scores=1-oneQuestionnaire_scores;   # trust choices for TGnh; Cooperative choices
-  } else if (sum(str_detect(nameStrings,'RPp_')) | sum(str_detect(nameStrings,'RPn_'))){
-    oneQuestionnaire_scores=10-oneQuestionnaire_scores;   # risk preference
+  ################# This section reverse the direction of some variables to make them measure cooperation or ambiguity aversion ######################
+  if (sum(str_detect(nameStrings,'TGnh_')) | sum(str_detect(nameStrings,'BS_'))){
+    oneQuestionnaire_scores=1-oneQuestionnaire_scores;   # Choosing 1 represents non-cooperation. Here convert to ratio of trusting or cooperative choices
+  } else if (sum(str_detect(nameStrings,'AA_'))){
+    oneQuestionnaire_scores=9-oneQuestionnaire_scores;   # Count of 0s represents ambiguity preference. Here convert to ambiguity aversion
   }
-  
   
   #######################################
   

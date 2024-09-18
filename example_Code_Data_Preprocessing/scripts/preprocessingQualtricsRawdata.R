@@ -587,8 +587,7 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
       Responses_oneQuestionnaire_scoresTASK_allSub=rbind(Responses_oneQuestionnaire_scoresTASK_allSub,SVO);  # score for all subjects
       
     }else if(unlist(questionnaireNames[t])[1]=="RPp" || unlist(questionnaireNames[t])[1]=="RPn" || unlist(questionnaireNames[t])[1]=="RPm"   || unlist(questionnaireNames[t])[1]=="AA"){ 
-      
-      temp_formalRounds=Responses_oneTask_allSub[sub,c(3:11)]; # formal rounds
+      temp_formalRounds=Responses_oneTask_allSub[sub,c(3:11)]; # formal rounds (10% to 90% for the risky option)
       
       formalRounds=na.omit(temp_formalRounds);  ## Left is the safe or unambiguous option (left=1, right =0) 
       if (length(formalRounds) <9){switchPoint=NA; #removed this participant if there is missing value
@@ -598,12 +597,12 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
       
       Responses_oneQuestionnaire_scoresTASK_allSub=rbind(Responses_oneQuestionnaire_scoresTASK_allSub,switchPoint);
     }else if(unlist(questionnaireSubscaleList[t])[1]==99 && (unlist(questionnaireNames[t])[1]=="RD" || unlist(questionnaireNames[t])[1]=="TG" )){ #when each item is a subscale 
-      temp_formalRounds=Responses_oneTask_allSub[sub,c(2:11)];  #formal rounds
+      temp_formalRounds=Responses_oneTask_allSub[sub,c(2:11)];  #formal rounds (the last round is for sanity check, where both options are safe)
       
       formalRounds=na.omit(temp_formalRounds);  ## Left is the safe and non-cooperative option (left=1, right =0) 
-      if (length(formalRounds) <10){switchPoint=NA;#removed this participant if there is missing value
+      if (length(formalRounds) <10 | formalRounds[10]==1){switchPoint=NA; #removed this participant if there is missing value or they chose the worse option in the last round
       }else {
-        switchPoint=sum(formalRounds==0) # Here use the count of risky/cooperative options to represent trust.
+        switchPoint=sum(formalRounds[1:9]==0) # Here use the count of risky/cooperative options to represent trust.
       }
       
       Responses_oneQuestionnaire_scoresTASK_allSub=rbind(Responses_oneQuestionnaire_scoresTASK_allSub,switchPoint);

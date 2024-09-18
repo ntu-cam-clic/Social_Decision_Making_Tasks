@@ -596,7 +596,7 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
       }
       
       Responses_oneQuestionnaire_scoresTASK_allSub=rbind(Responses_oneQuestionnaire_scoresTASK_allSub,switchPoint);
-    }else if(unlist(questionnaireSubscaleList[t])[1]==99 && (unlist(questionnaireNames[t])[1]=="RD" || unlist(questionnaireNames[t])[1]=="TG" )){ #when each item is a subscale 
+    }else if(unlist(questionnaireNames[t])[1]=="RD" || unlist(questionnaireNames[t])[1]=="TG" ){ #when each item is a subscale 
       temp_formalRounds=Responses_oneTask_allSub[sub,c(2:11)];  #formal rounds (the last round is for sanity check, where both options are safe)
       
       formalRounds=na.omit(temp_formalRounds);  ## Left is the safe and non-cooperative option (left=1, right =0) 

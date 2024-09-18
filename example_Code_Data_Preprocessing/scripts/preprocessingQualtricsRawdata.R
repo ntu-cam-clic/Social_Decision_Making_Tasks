@@ -588,43 +588,22 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
       
     }else if(unlist(questionnaireNames[t])[1]=="RPp" || unlist(questionnaireNames[t])[1]=="RPn" || unlist(questionnaireNames[t])[1]=="RPm"   || unlist(questionnaireNames[t])[1]=="AA"){ 
       
-      if (unlist(questionnaireNames[t])[1]=="RPm") {temp_regDV=1-Responses_oneTask_allSub[sub,c(3:11)];} #  change 1 to 0, and 0 to 1 for RPm, because the right option is the better option in the 1st round of RPm
-      else {temp_regDV=Responses_oneTask_allSub[sub,c(3:11)]; }  #other tasks remain the same
+      temp_formalRounds=Responses_oneTask_allSub[sub,c(3:11)]; # formal rounds
       
-      regDV=na.omit(temp_regDV);  ## Left is better initially (left=1, right =0) 
-      if (length(regDV) <5){switchPoint=NA;
+      formalRounds=na.omit(temp_formalRounds);  ## Left is the safe or unambiguous option (left=1, right =0) 
+      if (length(formalRounds) <9){switchPoint=NA; #removed this participant if there is missing value
       }else {
-        regIV=sequence(length(regDV));
-        regData=data.frame(IV=regIV,DV=regDV);
-        
-        model = glm (DV ~ IV,data=regData,family = "binomial")
-        # summary(model)
-        slope=as.numeric(model$coefficients[2]);
-        intercept=as.numeric(model$coefficients[1]);
-        if (slope<0) {                                 # slope should be negative since left is better initially
-          switchPoint= (0.5-intercept)/slope;
-          if (switchPoint>15|switchPoint< -5){print("switchPoint=");print(switchPoint);switchPoint=NA;};
-        } else {switchPoint=NA;}
+        switchPoint=sum(formalRounds==0) # Here use the count of risky/ambiguous options to represent risk preference or ambiguity aversion.
       }
       
       Responses_oneQuestionnaire_scoresTASK_allSub=rbind(Responses_oneQuestionnaire_scoresTASK_allSub,switchPoint);
-    }else if(unlist(questionnaireNames[t])[1]=="RD" || unlist(questionnaireNames[t])[1]=="TG"){
-      temp_regDV=Responses_oneTask_allSub[sub,c(2:11)];   #other tasks remain the same
+    }else if(unlist(questionnaireSubscaleList[t])[1]==99 && (unlist(questionnaireNames[t])[1]=="RD" || unlist(questionnaireNames[t])[1]=="TG" )){ #when each item is a subscale 
+      temp_formalRounds=Responses_oneTask_allSub[sub,c(2:11)];  #formal rounds
       
-      regDV=na.omit(temp_regDV);  ## Left is better initially (left=1, right =0) 
-      if (length(regDV) <5){switchPoint=NA;
+      formalRounds=na.omit(temp_formalRounds);  ## Left is the safe and non-cooperative option (left=1, right =0) 
+      if (length(formalRounds) <10){switchPoint=NA;#removed this participant if there is missing value
       }else {
-        regIV=sequence(length(regDV));
-        regData=data.frame(IV=regIV,DV=regDV);
-        
-        model = glm (DV ~ IV,data=regData,family = "binomial")
-        # summary(model)
-        slope=as.numeric(model$coefficients[2]);
-        intercept=as.numeric(model$coefficients[1]);
-        if (slope<0) {                                 # slope should be negative since left is better initially
-          switchPoint= (0.5-intercept)/slope;
-          if (switchPoint>15|switchPoint< -5){print("switchPoint=");print(switchPoint);switchPoint=NA;};
-        } else {switchPoint=NA;}
+        switchPoint=sum(formalRounds==0) # Here use the count of risky/cooperative options to represent trust.
       }
       
       Responses_oneQuestionnaire_scoresTASK_allSub=rbind(Responses_oneQuestionnaire_scoresTASK_allSub,switchPoint);

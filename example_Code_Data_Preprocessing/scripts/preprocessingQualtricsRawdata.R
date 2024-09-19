@@ -23,8 +23,8 @@ list.of.packages <- c(
  "stringr",
   "tidyr",
   "MASS",
-  "stringr"
-  )
+  "stringr",
+  "logistf")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 
@@ -35,6 +35,7 @@ library(matrixStats)
 library(tidyr)
 library(MASS)
 library(psych)
+library(logistf)
 
 ## values allocated to self and other for each option of the SVO task
 SVO_self=list(c(85,85,85,85,85,85,85,85,85),
@@ -587,26 +588,63 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
       Responses_oneQuestionnaire_scoresTASK_allSub=rbind(Responses_oneQuestionnaire_scoresTASK_allSub,SVO);  # score for all subjects
       
     }else if(unlist(questionnaireNames[t])[1]=="RPp" || unlist(questionnaireNames[t])[1]=="RPn" || unlist(questionnaireNames[t])[1]=="RPm"   || unlist(questionnaireNames[t])[1]=="AA"){ 
-      temp_formalRounds=Responses_oneTask_allSub[sub,c(3:11)]; # formal rounds (10% to 90% for the risky option)
-      
-      formalRounds=na.omit(temp_formalRounds);  ## Left is the safe or unambiguous option (left=1, right =0) 
-      if (length(formalRounds) <9){switchPoint=NA; #removed this participant if there is missing value
+      if (unlist(questionnaireNames[t])[1]=="RPm") {temp_regDV=1-Responses_oneTask_allSub[sub,c(3:11)]; #  change 1 to 0, and 0 to 1 for RPm
+      }else {temp_regDV=Responses_oneTask_allSub[sub,c(3:11)]; }  # formal rounds (10% to 90% for the risky option)
+      regDV=na.omit(temp_regDV);  ## Left is better initially (left=1, right =0) 
+      if (length(regDV) <9){switchPoint=NA;  #remove this participant if there is missing value
       }else {
-        switchPoint=sum(formalRounds==0) # Here use the count of risky/ambiguous options to represent risk preference or ambiguity aversion.
-      }
+        regIV=sequence(length(regDV));
+        regData=data.frame(IV=regIV,DV=regDV);
+        model = logistf(DV ~ IV,data=regData)   #use logit regression to estimate the switching point.
+        # summary(model)
+        slope=as.numeric(model$coefficients[2]);
+        intercept=as.numeric(model$coefficients[1]);
+        if (slope<0) {                                 # slope should be negative since left is better initially
+          switchPoint= (0.5-intercept)/slope;
+          # multiple switching may make the estimated value out of the actual range of rounds, here bound the values
+          if (switchPoint>=8 & switchPoint<=20) {
+            switchPoint=8;
+          }else if (switchPoint>=-10 & switchPoint<=1) {
+            switchPoint=1;
+          }else if (switchPoint>20 | switchPoint< -10){ # estimated values out of this range may suggest symmetric choice patterns, like this [1 1 0 0 0 0 0 1 1]
+            print(paste0(toString(subID[sub]),": switchPoint=",toString(switchPoint)));
+            print(regData$DV);
+            switchPoint=NA;
+          } #end of bounding switching point values 
+        } else {switchPoint=NA;
+        } #end of checking slope
+      } #end of checking number of rounds
+      #in the next line convert to integer to represent the switching point.
+      Responses_oneQuestionnaire_scoresTASK_allSub=rbind(Responses_oneQuestionnaire_scoresTASK_allSub,round(switchPoint));
+    }else if(unlist(questionnaireNames[t])[1]=="RD" || unlist(questionnaireNames[t])[1]=="TG" ){  
+      temp_regDV=Responses_oneTask_allSub[sub,c(2:11)];   ##formal rounds (the last round is for sanity check, where both options are safe)
       
-      Responses_oneQuestionnaire_scoresTASK_allSub=rbind(Responses_oneQuestionnaire_scoresTASK_allSub,switchPoint);
-    }else if(unlist(questionnaireNames[t])[1]=="RD" || unlist(questionnaireNames[t])[1]=="TG" ){ #when each item is a subscale 
-      temp_formalRounds=Responses_oneTask_allSub[sub,c(2:11)];  #formal rounds (the last round is for sanity check, where both options are safe)
-      
-      formalRounds=na.omit(temp_formalRounds);  ## Left is the safe and non-cooperative option (left=1, right =0) 
-      if (length(formalRounds) <10 | formalRounds[10]==1){switchPoint=NA; #removed this participant if there is missing value or they chose the worse option in the last round
+      regDV=na.omit(temp_regDV);  ## Left is better initially (left=1, right =0) 
+      if (length(regDV) <10 | regDV[10]==1){switchPoint=NA; #removed this participant if there is missing value or they chose the worse option in the last round
       }else {
-        switchPoint=sum(formalRounds[1:9]==0) # Here use the count of risky/cooperative options to represent trust.
-      }
-      
-      Responses_oneQuestionnaire_scoresTASK_allSub=rbind(Responses_oneQuestionnaire_scoresTASK_allSub,switchPoint);
-      
+        regIV=sequence(length(regDV[1:9])); # to make the estimated values comparable with other games with 9 rounds
+        regData=data.frame(IV=regIV,DV=regDV[1:9]);
+        model = logistf(DV ~ IV,data=regData)   #use logit regression to estimate the switching point.
+        # summary(model)
+        slope=as.numeric(model$coefficients[2]);
+        intercept=as.numeric(model$coefficients[1]);
+        if (slope<0) {                                 # slope should be negative since left is better initially
+          switchPoint= (0.5-intercept)/slope;
+          # multiple switching may make the estimated value out of the actual range of rounds, here bound the values
+          if (switchPoint>=8 & switchPoint<=20) {
+            switchPoint=8;
+          }else if (switchPoint>=-10 & switchPoint<=1) {
+            switchPoint=1;
+          }else if (switchPoint>20 | switchPoint< -10){ # estimated values out of this range may suggest symmetric choice patterns, like this [1 1 0 0 0 0 0 1 1]
+            print(paste0(toString(subID[sub]),": switchPoint=",toString(switchPoint)));
+            print(regData$DV);
+            switchPoint=NA;
+          } #end of bounding switching point values 
+        } else {switchPoint=NA;
+        } #end of checking slope
+      } #end of checking number of rounds
+      #in the next line convert to integer to represent the switching point.
+      Responses_oneQuestionnaire_scoresTASK_allSub=rbind(Responses_oneQuestionnaire_scoresTASK_allSub,round(switchPoint));
     } # end of different tasks
   } # end of subjects for loop
     
@@ -714,12 +752,15 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
     response_mat_names=unlist(Responses_roundLableList[t]);
   } #end of if for different tasks
   
-  ################# This section reverse the direction of some variables to make them measure cooperation or ambiguity aversion ######################
-  if (sum(str_detect(nameStrings,'TGnh_')) | sum(str_detect(nameStrings,'BS_'))){
-    oneQuestionnaire_scores=1-oneQuestionnaire_scores;   # Choosing 1 represents non-cooperation. Here convert to ratio of trusting or cooperative choices
-  } else if (sum(str_detect(nameStrings,'AA_'))){
-    oneQuestionnaire_scores=9-oneQuestionnaire_scores;   # Count of 0s represents ambiguity preference. Here convert to ambiguity aversion
+  ################# This section reverses the direction of some variables to make them measure cooperation or risk preference ######################
+  if (sum(str_detect(nameStrings,'TG_')) | sum(str_detect(nameStrings,'RD_'))){
+    oneQuestionnaire_scores=10-oneQuestionnaire_scores;  # trust preference for TG; risk preference for RD
+  } else if (sum(str_detect(nameStrings,'TGnh_')) | sum(str_detect(nameStrings,'BS_'))){
+    oneQuestionnaire_scores=1-oneQuestionnaire_scores;   # trusting choices for TGnh; Cooperative choices for BS
+  } else if (sum(str_detect(nameStrings,'RPp_')) | sum(str_detect(nameStrings,'RPn_'))){
+    oneQuestionnaire_scores=10-oneQuestionnaire_scores;   # risk preference
   }
+  
   
   #######################################
   

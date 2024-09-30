@@ -17,6 +17,7 @@ We also share scripts for preprocessing the raw data from these task (e.g., calc
 * Prisoner’s dilemma game (**PD**)
 * Stag hunt game (**SH**)
 * Battle of the sexes game (**BS**) 
+You can try to play the tasks here: https://ntusingapore.qualtrics.com/jfe/form/SV_afMiUPTlQtwZ8SW
 
 ## Files in this GitHub repository 
 * “**socialDMtasks_ScientificData.qsf**” is a “Qualtrics Survey Format” file, which contains the survey questions, Javascript, survey header, CSS, embedded data for the decision-making tasks and can be transferred to another Qualtrics account. Please note that if you import the .qsf file into your own account, the files (including images) in the library are not transferred. If the images in the original account are deleted, you will lose access to them.

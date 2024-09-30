@@ -1,7 +1,7 @@
 # Implementation of Decision-Making Tasks on Qualtrics
 
 Scripts and images for implementing the following 12 decision-making tasks on Qualtrics.
-We also share a dataset of responses from 314 participants in these decision-making tasks
+We also share scripts for processing the raw data from these task (e.g., calculating scores for each task).
 
 
 ## Social decision-making tasks

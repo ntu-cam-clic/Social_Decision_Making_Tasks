@@ -16,7 +16,8 @@ We also share scripts for preprocessing the raw data from these task (e.g., calc
 * Trust game (as Player B; **TGb**)
 * Prisoner’s dilemma game (**PD**)
 * Stag hunt game (**SH**)
-* Battle of the sexes game (**BS**) 
+* Battle of the sexes game (**BS**)
+  
 You can try to play the tasks here: https://ntusingapore.qualtrics.com/jfe/form/SV_afMiUPTlQtwZ8SW
 
 ## Files in this GitHub repository 

@@ -22,7 +22,6 @@ We also share scripts for preprocessing the raw data from these task (e.g., calc
 * “**socialDMtasks_ScientificData.qsf**” is a “Qualtrics Survey Format” file, which contains the survey questions, Javascript, survey header, CSS, embedded data for the decision-making tasks and can be transferred to another Qualtrics account. Please note that if you import the .qsf file into your own account, the files (including images) in the library are not transferred. If the images in the original account are deleted, you will lose access to them.
 * To solve the issue mentioned above, we uploaded all the images of the decision-making tasks to the “**Images**” folder. You can download the images and use them in your own GitHub or Qualtrics account.
 * If you copy the images to your own GitHub account, the script “**updatingImageURLs.py**” can be used to update the URL links to all the images.
-* In the “**data&codebook**” folder, there are 12 csv files each containing responses from 392 participants in one decision-making task, along with a file with detailed demographics (“**demographics.csv**”) and a codebook (“**codebook.csv**”).
 * The folder “**example_Code_Data_Preprocessing**” contains an example raw dataset from Qualtrics and a script for preprocessing the raw data. The reader can collect their own data using the   
 
 

@@ -588,7 +588,7 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
       Responses_oneQuestionnaire_scoresTASK_allSub=rbind(Responses_oneQuestionnaire_scoresTASK_allSub,SVO);  # score for all subjects
       
     }else if(unlist(questionnaireNames[t])[1]=="RPp" || unlist(questionnaireNames[t])[1]=="RPn" || unlist(questionnaireNames[t])[1]=="RPm"   || unlist(questionnaireNames[t])[1]=="AA"){ 
-      if (unlist(questionnaireNames[t])[1]=="RPm") {temp_regDV=1-Responses_oneTask_allSub[sub,c(3:11)]; #  change 1 to 0, and 0 to 1 for RPm
+      if (unlist(questionnaireNames[t])[1]=="RPm") {temp_regDV=Responses_oneTask_allSub[sub,c(11:3)];} #  reverse the order to make the RPm consistent to RPp and RPn
       }else {temp_regDV=Responses_oneTask_allSub[sub,c(3:11)]; }  # formal rounds (10% to 90% for the risky option)
       regDV=na.omit(temp_regDV);  ## Left is better initially (left=1, right =0) 
       if (length(regDV) <9){switchPoint=NA;  #remove this participant if there is missing value
@@ -754,11 +754,11 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
   
   ################# This section reverses the direction of some variables to make them measure cooperation or risk preference ######################
   if (sum(str_detect(nameStrings,'TG_')) | sum(str_detect(nameStrings,'RD_'))){
-    oneQuestionnaire_scores=10-oneQuestionnaire_scores;  # trust preference for TG; risk preference for RD
+    oneQuestionnaire_scores=9-oneQuestionnaire_scores;  # trust preference for TG; risk preference for RD
   } else if (sum(str_detect(nameStrings,'TGnh_')) | sum(str_detect(nameStrings,'BS_'))){
     oneQuestionnaire_scores=1-oneQuestionnaire_scores;   # trusting choices for TGnh; Cooperative choices for BS
-  } else if (sum(str_detect(nameStrings,'RPp_')) | sum(str_detect(nameStrings,'RPn_'))){
-    oneQuestionnaire_scores=10-oneQuestionnaire_scores;   # risk preference
+  } else if (sum(str_detect(nameStrings,'RPp_')) | sum(str_detect(nameStrings,'RPn_')) | sum(str_detect(nameStrings,'RPm_'))){
+    oneQuestionnaire_scores=9-oneQuestionnaire_scores;   # risk preference
   }
   
   

@@ -19,6 +19,7 @@ We also share scripts for preprocessing the raw data from these task (e.g., calc
 * Battle of the sexes game (**BS**)
   
 You can try to play the tasks here: https://ntusingapore.qualtrics.com/jfe/form/SV_afMiUPTlQtwZ8SW
+(Note: To return to the first page (the task list), you should first clear cookies and site data, then refresh the webpage.)
 
 ## Files in this GitHub repository 
 * **Images** folder. This folder stores images used in the socialDMtasks.qsf. You can download the images and use them in your own GitHub or Qualtrics account.

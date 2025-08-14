@@ -518,7 +518,7 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
           Responses_oneTask_allSub_raw=Responses_oneTask_allSub; # Here keep the original raw scores using a different variable
           # We will use this raw scores variable to construct the preprocessed data file. 
    
-          # for tasks with multiple rounds on one page, use the timing for the last click on that page
+          # for tasks with multiple rounds on one page, use the RT of the last round on that page
           if (sum(str_detect(nameStrings,'RPp_')) 
               || sum(str_detect(nameStrings,'RPn_')) 
               || sum(str_detect(nameStrings,'RPm_')) 
@@ -526,11 +526,11 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
               || sum(str_detect(nameStrings,'TGnh_')) 
               || sum(str_detect(nameStrings,'TG_'))
               || sum(str_detect(nameStrings,'RD_')) ){
-            DurationMeasure=as.matrix(RT_oneTask_allSub[,dim(RT_oneTask_allSub)[2]]);
+            DurationMeasure=as.matrix(RT_oneTask_allSub[,dim(RT_oneTask_allSub)[2]]);  # only using the last round as the RT
           } else if (sum(str_detect(nameStrings,'PD_')) 
                      || sum(str_detect(nameStrings,'SH_')) 
                      || sum(str_detect(nameStrings,'BS_'))){
-            DurationMeasure=RT_oneTask_allSub[,c(2:6)];
+            DurationMeasure=RT_oneTask_allSub[,c(2:6)];  # RT for each formal round
           }else{
             DurationMeasure=RT_oneTask_allSub;
           }
@@ -790,6 +790,7 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
                file = paste0(myPath,preprocessedDataPath,questionnaireNames[t],".csv"), sep=",");
   
 } # end of questionnaires/tasks
+
 
 
 

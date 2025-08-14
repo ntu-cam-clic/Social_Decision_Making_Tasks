@@ -353,11 +353,11 @@ alldata=rbind(rawdata[-c(1,2), ])  # delete the extra column that we don't need
 
 IDtoExclude=c(000); #We can specify the participants we want to exclude, keep 0 here if no participants to exclude
 for (m in c(1:length(IDtoExclude))){
-  alldata=alldata[alldata$PID!=IDtoExclude[m],]
+  alldata=alldata[alldata$QID277!=IDtoExclude[m],]    # QID277 is the QID for participants ID; need to change accordingly
 }
 
 lengthData=dim(alldata)[1];
-PID=as.integer(alldata$QID277); #You need to check if the QID is changed for each question.
+PID=as.integer(alldata$QID277);   # QID277 is the QID for participants ID
 numsub=length(PID); # number of participants
 subLable=paste('sub',PID); #label of subjects
 
@@ -790,6 +790,7 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
                file = paste0(myPath,preprocessedDataPath,questionnaireNames[t],".csv"), sep=",");
   
 } # end of questionnaires/tasks
+
 
 
 

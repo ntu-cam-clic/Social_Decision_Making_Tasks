@@ -529,8 +529,7 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
             DurationMeasure=as.matrix(RT_oneTask_allSub[,dim(RT_oneTask_allSub)[2]]);
           } else if (sum(str_detect(nameStrings,'PD_')) 
                      || sum(str_detect(nameStrings,'SH_')) 
-                     || sum(str_detect(nameStrings,'BS_')) 
-                     || sum(str_detect(nameStrings,'TGnh_'))){
+                     || sum(str_detect(nameStrings,'BS_'))){
             DurationMeasure=RT_oneTask_allSub[,c(2:6)];
           }else{
             DurationMeasure=RT_oneTask_allSub;
@@ -791,5 +790,6 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
                file = paste0(myPath,preprocessedDataPath,questionnaireNames[t],".csv"), sep=",");
   
 } # end of questionnaires/tasks
+
 
 

@@ -693,7 +693,7 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
     
     response_mat=cbind(Responses_oneTask_allSub_raw,
                        RT_oneTask_allSub,
-                       OutcomeSelf_oneTask_allSub,
+                       OutcomeSelf_oneTask_allSub, # since participant is in the role of Player B, this "OutcomeSelf" is actually for the opponent.
                        OutcomeOther_oneTask_allSub);
     response_mat_names=c(paste0(unlist(Responses_roundLableList[t]),''),
                          paste0(unlist(TimingClick_roundLableList[t]),'_RT'),  # response time
@@ -792,3 +792,4 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
                file = paste0(myPath,preprocessedDataPath,questionnaireNames[t],".csv"), sep=",");
   
 } # end of questionnaires/tasks
+

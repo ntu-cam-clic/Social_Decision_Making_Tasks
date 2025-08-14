@@ -532,7 +532,6 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
                      || sum(str_detect(nameStrings,'BS_')) 
                      || sum(str_detect(nameStrings,'TGnh_'))){
             DurationMeasure=RT_oneTask_allSub[,c(2:6)];
-            Responses_oneTask_allSub=Responses_oneTask_allSub[,c(2:6)];
           }else{
             DurationMeasure=RT_oneTask_allSub;
           }
@@ -652,7 +651,7 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
   # set a filter for 20% missing data by task for the participant. Note that rounds removed due to fast RT also count as missing.
   nameStrings=unlist(questionnaireLevelVariables[t]); # strings of variable names
   if (sum(str_detect(nameStrings,'PD_')) || sum(str_detect(nameStrings,'SH_')) || sum(str_detect(nameStrings,'BS_')) || sum(str_detect(nameStrings,'TGnh_')) ){
-    oneQuestionnaire_MISS=((rowSums(is.na(Responses_oneTask_allSub[,c(1:5)]))/5)> 0.2)*1;
+    oneQuestionnaire_MISS=((rowSums(is.na(Responses_oneTask_allSub[,c(2:6)]))/5)> 0.2)*1;
   } else if (sum(str_detect(nameStrings,'RPp_')) || sum(str_detect(nameStrings,'RPn_')) || sum(str_detect(nameStrings,'RPm_')) || sum(str_detect(nameStrings,'AA_')) ){
     oneQuestionnaire_MISS=((rowSums(is.na(Responses_oneTask_allSub[,c(3:11)]))/9)> 0.2)*1;
   } else if (sum(str_detect(nameStrings,'RD_')) || sum(str_detect(nameStrings,'TG_')) ){
@@ -665,7 +664,7 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
   ##Here deal with different questionnaires/tasks accordingly
   if (sum(str_detect(nameStrings,'PD_')) || sum(str_detect(nameStrings,'SH_')) || sum(str_detect(nameStrings,'BS_')) || 
       sum(str_detect(nameStrings,'TGnh_'))  ){
-    tempResponse=Responses_oneTask_allSub[,c(1:5)];
+    tempResponse=Responses_oneTask_allSub[,c(2:6)];
     oneQuestionnaire_scores=rowMeans(tempResponse,na.rm=T);
     
     response_mat=cbind(Responses_oneTask_allSub_raw,
@@ -792,4 +791,5 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
                file = paste0(myPath,preprocessedDataPath,questionnaireNames[t],".csv"), sep=",");
   
 } # end of questionnaires/tasks
+
 

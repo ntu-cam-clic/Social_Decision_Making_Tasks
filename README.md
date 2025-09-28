@@ -23,15 +23,17 @@ You can try to play the tasks here: https://ntusingapore.qualtrics.com/jfe/form/
 You are suggested to install Firefox to try this link as it is easy to clear cookies and site data:
 On Firefox, just need to click the padlock next to the URL, and select "**Clear cookies and site data**".)
 
-The following supplementary tasks were also added:
+The following supplementary tasks were modified from some of the above tasks:
 * Risk preference task (positive domain; **PRp**)
 * Risk preference task (negative domain; **RPn**)
-* Temporal discounting task (**TD**)
 * Risky dictator game (**RD**)
 * Trust game (with no choice history; **TGnh**)
 * Trust game (with choice history; **TG**)
 * Social value orientation task (**SVO**)
 * Prisoner’s dilemma game (**PD**)
+
+The following new supplementary tasks were also added:
+* Temporal discounting task (**TD**)
 * Ultimatum game (as proposer; **UGp**)
 * Ultimatum game (as responder; **UGr**)
 

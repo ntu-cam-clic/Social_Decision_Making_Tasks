@@ -23,6 +23,18 @@ You can try to play the tasks here: https://ntusingapore.qualtrics.com/jfe/form/
 You are suggested to install Firefox to try this link as it is easy to clear cookies and site data:
 On Firefox, just need to click the padlock next to the URL, and select "**Clear cookies and site data**".)
 
+The following supplementary tasks were also added:
+* Risk preference task (positive domain; **PRp**)
+* Risk preference task (negative domain; **RPn**)
+* Temporal discounting task (**TD**)
+* Risky dictator game (**RD**)
+* Trust game (with no choice history; **TGnh**)
+* Trust game (with choice history; **TG**)
+* Social value orientation task (**SVO**)
+* Prisoner’s dilemma game (**PD**)
+* Ultimatum game (as proposer; **UGp**)
+* Ultimatum game (as responder; **UGr**)
+
 ## Files in this GitHub repository 
 * **Images** folder. This folder stores images used in the socialDMtasks.qsf. You can download the images and use them in your own GitHub or Qualtrics account.
 * **example_Code_Data_Preprocessing** folder. This folder contains an example raw dataset from Qualtrics and scripts for preprocessing the raw data and generating the exclusion criteria filters.

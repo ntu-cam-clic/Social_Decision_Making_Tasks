@@ -77,7 +77,7 @@ To implement the above-mentioned tasks on Qualtrics, having a basic knowledge of
     
 ## Importing the QSF file into Qualtrics
 Here are a few steps for transferring these tasks into your Qualtrics account (You need to have access to a Qualtrics account with full license, which allows for custom JavaScript.):
-1.	Download the **socialDMtasks_ScientificData.qsf** file to your local computer.
+1.	Download the **QualtricsCode_socialDMtasks.qsf** file to your local computer.
 2.	Import the .qsf file to your Qualtrics account.
 <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/ImportQSF.png" alt="alt text" width="500">
 

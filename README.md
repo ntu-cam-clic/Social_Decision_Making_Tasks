@@ -27,16 +27,13 @@ You are suggested to install Firefox to try this link as it is easy to clear coo
 On Firefox, just need to click the padlock next to the URL, and select "**Clear cookies and site data**".)
 
 The following tasks have two versions:
-* Risk preference task (positive domain; **PRp**)
-  [**Version 1**: points represented by balls in bags; reward structure: safe: 10, risky:15&8
-  **Version 2**: points represented by pie charts; reward structure: safe: 10, risky:15&5]
-* Risk preference task (negative domain; **RPn**) [**Version 1**: points represented with balls in bags; **Version 2**: points represented with pie charts]
-* Risky dictator game (**RD**)
-* Trust game (with no choice history; **TGnh**)
-* Trust game (with choice history; **TG**)
-* Social value orientation task (**SVO**) [**Version 1**:; **Version 2**: points represented with pie charts]
-* Prisoner’s dilemma game (**PD**) [**Version 1**: 5 rounds; **Version 2**: 10 rounds]
-
+* Risk preference task (positive domain; **PRp**)<br>[**Version 1**]: points represented by balls in bags; reward structure: safe: 10, risky: 15&8<br>[**Version 2**]: points represented by pie charts; reward structure: safe: 10, risky: 15&5
+* Risk preference task (negative domain; **RPn**)<br>[**Version 1**]: points represented by balls in bags; reward structure: safe: -10, risky: -15&-8<br>[**Version 2**]: points represented by pie charts; reward structure: safe: -10, risky: -15&-5
+* Risky dictator game (**RD**)<br>[**Version 1**]: reward structure: safe: 10, risky: 15&8<br>[**Version 2**]: reward structure: safe: 10, risky: 15&5
+* Trust game (with no choice history; **TGnh**)<br>[**Version 1**]: 5 rounds; reward structure: safe: 10, risky: 15&8<br>[**Version 2**]: 10 rounds; reward structure: safe: 10, risky: 15&5
+* Trust game (with choice history; **TG**)<br>[**Version 1**]: reward structure: safe: 10, risky: 15&8<br>[**Version 2**]: reward structure: safe: 10, risky: 15&5
+* Social value orientation task (**SVO**) <br>[**Version 1**]: original points (Murphy et al., 2011) for self and other are used (around 100)<br>[**Version 2**]: points for self and other have been adjusted to be around 10
+* Prisoner’s dilemma game (**PD**) <br>[**Version 1**]: 5 rounds<br>[**Version 2**]: 10 rounds
 
 ## Files in this GitHub repository 
 * **Images** folder. This folder stores images used in the socialDMtasks.qsf. You can download the images and use them in your own GitHub or Qualtrics account.

@@ -5,7 +5,7 @@ We also share scripts for preprocessing the raw data from these task (e.g., calc
 
 
 ## Social decision-making tasks
-* Risk preference task (positive domain; **PRp**)
+* Risk preference task (positive domain; **RPp**)
 * Risk preference task (negative domain; **RPn**)
 * Risk preference task (mixed domain; **RPm**)
 * Ambiguity aversion task (**AA**)
@@ -21,46 +21,46 @@ We also share scripts for preprocessing the raw data from these task (e.g., calc
 * Ultimatum game (as proposer; **UGp**)
 * Ultimatum game (as responder; **UGr**)
   
-You can try to play some of the tasks here: https://ntusingapore.qualtrics.com/jfe/form/SV_afMiUPTlQtwZ8SW<br>
+<sub> You can try to play some of the tasks here: https://ntusingapore.qualtrics.com/jfe/form/SV_afMiUPTlQtwZ8SW<br>
 (Note: To return to the first page (the task list), you should first clear cookies and site data, then refresh the webpage.
 You are suggested to install Firefox to try this link as it is easy to clear cookies and site data:
-On Firefox, just need to click the padlock next to the URL, and select "**Clear cookies and site data**".)
+On Firefox, just need to click the padlock next to the URL, and select "**Clear cookies and site data**".)</sub> 
 
 <ins>The following tasks have two versions:</ins>
-* Risk preference task (positive domain; **PRp**)<br>[**Version 1**]: probabilities represented by balls in bags; reward structure: safe: 10, risky: 15&8<br>[**Version 2**]: probabilities represented by pie charts; reward structure: safe: 10, risky: 15&5
-* Risk preference task (negative domain; **RPn**)<br>[**Version 1**]: probabilities represented by balls in bags; reward structure: safe: -10, risky: -15&-8<br>[**Version 2**]: probabilities represented by pie charts; reward structure: safe: -10, risky: -15&-5
-* Risky dictator game (**RD**)<br>[**Version 1**]: reward structure: safe: 10, risky: 15&8<br>[**Version 2**]: reward structure: safe: 10, risky: 15&5
-* Trust game (with no choice history; **TGnh**)<br>[**Version 1**]: 5 rounds; reward structure: safe: 10, risky: 15&8<br>[**Version 2**]: 10 rounds; reward structure: safe: 10, risky: 15&5
-* Trust game (with choice history; **TG**)<br>[**Version 1**]: reward structure: safe: 10, risky: 15&8<br>[**Version 2**]: reward structure: safe: 10, risky: 15&5
-* Social value orientation task (**SVO**) <br>[**Version 1**]: original points (Murphy et al., 2011) for self and other are used (around 100)<br>[**Version 2**]: points for self and other have been adjusted to be around 10
-* Prisoner’s dilemma game (**PD**) <br>[**Version 1**]: 5 rounds<br>[**Version 2**]: 10 rounds
+* <sub>Risk preference task (positive domain; **RPp**)<br>[**Version 1**]: probabilities represented by balls in bags; reward structure: safe: 10, risky: 15&8<br>[**Version 2**]: probabilities represented by pie charts; reward structure: safe: 10, risky: 15&5
+* <sub>Risk preference task (negative domain; **RPn**)<br>[**Version 1**]: probabilities represented by balls in bags; reward structure: safe: -10, risky: -15&-8<br>[**Version 2**]: probabilities represented by pie charts; reward structure: safe: -10, risky: -15&-5
+* <sub>Risky dictator game (**RD**)<br>[**Version 1**]: reward structure: safe: 10, risky: 15&8<br>[**Version 2**]: reward structure: safe: 10, risky: 15&5
+* <sub>Trust game (with no choice history; **TGnh**)<br>[**Version 1**]: 5 rounds; reward structure: safe: 10, risky: 15&8<br>[**Version 2**]: 10 rounds; reward structure: safe: 10, risky: 15&5
+* <sub>Trust game (with choice history; **TG**)<br>[**Version 1**]: reward structure: safe: 10, risky: 15&8<br>[**Version 2**]: reward structure: safe: 10, risky: 15&5
+* <sub>Social value orientation task (**SVO**) <br>[**Version 1**]: original points (Murphy et al., 2011) for self and other are used (around 100)<br>[**Version 2**]: points for self and other have been adjusted to be around 10
+* <sub>Prisoner’s dilemma game (**PD**) <br>[**Version 1**]: 5 rounds<br>[**Version 2**]: 10 rounds
 
 
-<ins>12 tasks were verified with responses from **392 participants in Singapore**:</ins>
-* Risk preference task (positive domain; **PRp**)_Version 1
-* Risk preference task (negative domain; **RPn**)_Version 1
-* Risk preference task (mixed domain; **RPm**)
-* Ambiguity aversion task (**AA**)
-* Risky dictator game (**RD**)_Version 1
-* Trust game (with no choice history; **TGnh**)_Version 1
-* Trust game (with choice history; **TG**)_Version 1
-* Trust game (as Player B; **TGb**)
-* Social value orientation task (**SVO**)_Version 1
-* Prisoner’s dilemma game (**PD**)_Version 1
-* Stag hunt game (**SH**)
-* Battle of the sexes game (**BS**)
+<ins>12 tasks were verified with responses from **392 participants in Singapore**</ins> <sub>(data from 314 participants shared on https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/DQSNXA)</sub>:
+* <sub>Risk preference task (positive domain; **RPp**)_Version 1
+* <sub>Risk preference task (negative domain; **RPn**)_Version 1
+* <sub>Risk preference task (mixed domain; **RPm**)
+* <sub>Ambiguity aversion task (**AA**)
+* <sub>Risky dictator game (**RD**)_Version 1
+* <sub>Trust game (with no choice history; **TGnh**)_Version 1
+* <sub>Trust game (with choice history; **TG**)_Version 1
+* <sub>Trust game (as Player B; **TGb**)
+* <sub>Social value orientation task (**SVO**)_Version 1
+* <sub>Prisoner’s dilemma game (**PD**)_Version 1
+* <sub>Stag hunt game (**SH**)
+* <sub>Battle of the sexes game (**BS**)
 
-<ins>10 tasks were verified with responses from **94 participants in the United States**:</ins>
-* Risk preference task (positive domain; **PRp**)_Version 2
-* Risk preference task (negative domain; **RPn**)_Version 2
-* Temporal discounting task (**TD**)
-* Risky dictator game (**RD**)_Version 2
-* Trust game (with no choice history; **TGnh**)_Version 2
-* Trust game (with choice history; **TG**)_Version 2
-* Social value orientation task (**SVO**)_Version 2
-* Prisoner’s dilemma game (**PD**)_Version 2
-* Ultimatum game (as proposer; **UGp**)
-* Ultimatum game (as responder; **UGr**)
+<ins>10 tasks were verified with responses from **94 participants in the United States**</ins> <sub>(data shared on https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/DQSNXA)</sub>:
+* <sub>Risk preference task (positive domain; **RPp**)_Version 2
+* <sub>Risk preference task (negative domain; **RPn**)_Version 2
+* <sub>Temporal discounting task (**TD**)
+* <sub>Risky dictator game (**RD**)_Version 2
+* <sub>Trust game (with no choice history; **TGnh**)_Version 2
+* <sub>Trust game (with choice history; **TG**)_Version 2
+* <sub>Social value orientation task (**SVO**)_Version 2
+* <sub>Prisoner’s dilemma game (**PD**)_Version 2
+* <sub>Ultimatum game (as proposer; **UGp**)
+* <sub>Ultimatum game (as responder; **UGr**)
 
 ## Files in this GitHub repository 
 * **Images** folder. This folder stores images used in the socialDMtasks.qsf. You can download the images and use them in your own GitHub or Qualtrics account.

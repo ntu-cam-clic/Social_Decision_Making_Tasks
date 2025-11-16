@@ -27,8 +27,8 @@ You are suggested to install Firefox to try this link as it is easy to clear coo
 On Firefox, just need to click the padlock next to the URL, and select "**Clear cookies and site data**".)
 
 The following tasks have two versions:
-* Risk preference task (positive domain; **PRp**)<br>[**Version 1**]: points represented by balls in bags; reward structure: safe: 10, risky: 15&8<br>[**Version 2**]: points represented by pie charts; reward structure: safe: 10, risky: 15&5
-* Risk preference task (negative domain; **RPn**)<br>[**Version 1**]: points represented by balls in bags; reward structure: safe: -10, risky: -15&-8<br>[**Version 2**]: points represented by pie charts; reward structure: safe: -10, risky: -15&-5
+* Risk preference task (positive domain; **PRp**)<br>[**Version 1**]: probabilities represented by balls in bags; reward structure: safe: 10, risky: 15&8<br>[**Version 2**]: probabilities represented by pie charts; reward structure: safe: 10, risky: 15&5
+* Risk preference task (negative domain; **RPn**)<br>[**Version 1**]: probabilities represented by balls in bags; reward structure: safe: -10, risky: -15&-8<br>[**Version 2**]: probabilities represented by pie charts; reward structure: safe: -10, risky: -15&-5
 * Risky dictator game (**RD**)<br>[**Version 1**]: reward structure: safe: 10, risky: 15&8<br>[**Version 2**]: reward structure: safe: 10, risky: 15&5
 * Trust game (with no choice history; **TGnh**)<br>[**Version 1**]: 5 rounds; reward structure: safe: 10, risky: 15&8<br>[**Version 2**]: 10 rounds; reward structure: safe: 10, risky: 15&5
 * Trust game (with choice history; **TG**)<br>[**Version 1**]: reward structure: safe: 10, risky: 15&8<br>[**Version 2**]: reward structure: safe: 10, risky: 15&5

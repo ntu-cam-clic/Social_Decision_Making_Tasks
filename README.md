@@ -1,6 +1,6 @@
 # QualGames: Implementation of Decision-Making Tasks on Qualtrics
 
-Scripts and images for implementing the following 12 decision-making tasks on Qualtrics.
+Scripts and images for implementing the following 15 decision-making tasks on Qualtrics.
 We also share scripts for preprocessing the raw data from these task (e.g., calculating scores for each task and each participant).
 
 
@@ -9,6 +9,7 @@ We also share scripts for preprocessing the raw data from these task (e.g., calc
 * Risk preference task (negative domain; **RPn**)
 * Risk preference task (mixed domain; **RPm**)
 * Ambiguity aversion task (**AA**)
+* Temporal discounting task (**TD**)
 * Risky dictator game (**RD**)
 * Trust game (with no choice history; **TGnh**)
 * Trust game (with choice history; **TG**)
@@ -17,25 +18,23 @@ We also share scripts for preprocessing the raw data from these task (e.g., calc
 * Prisoner’s dilemma game (**PD**)
 * Stag hunt game (**SH**)
 * Battle of the sexes game (**BS**)
+* Ultimatum game (as proposer; **UGp**)
+* Ultimatum game (as responder; **UGr**)
   
-You can try to play the tasks here: https://ntusingapore.qualtrics.com/jfe/form/SV_afMiUPTlQtwZ8SW<br>
+You can try to play some of the tasks here: https://ntusingapore.qualtrics.com/jfe/form/SV_afMiUPTlQtwZ8SW<br>
 (Note: To return to the first page (the task list), you should first clear cookies and site data, then refresh the webpage.
 You are suggested to install Firefox to try this link as it is easy to clear cookies and site data:
 On Firefox, just need to click the padlock next to the URL, and select "**Clear cookies and site data**".)
 
-The following supplementary tasks were modified from some of the above tasks:
-* Risk preference task (positive domain; **PRp**)
-* Risk preference task (negative domain; **RPn**)
+The following tasks have two versions:
+* Risk preference task (positive domain; **PRp**) [**Version 1**: points represented by balls in bags; reward structure: safe: 10, risky:15&8; **Version 2**: points represented by pie charts; reward structure: safe: 10, risky:15&5]
+* Risk preference task (negative domain; **RPn**) [**Version 1**: points represented with balls in bags; **Version 2**: points represented with pie charts]
 * Risky dictator game (**RD**)
 * Trust game (with no choice history; **TGnh**)
 * Trust game (with choice history; **TG**)
-* Social value orientation task (**SVO**)
-* Prisoner’s dilemma game (**PD**)
+* Social value orientation task (**SVO**) [**Version 1**:; **Version 2**: points represented with pie charts]
+* Prisoner’s dilemma game (**PD**) [**Version 1**: 5 rounds; **Version 2**: 10 rounds]
 
-The following new supplementary tasks were also added:
-* Temporal discounting task (**TD**)
-* Ultimatum game (as proposer; **UGp**)
-* Ultimatum game (as responder; **UGr**)
 
 ## Files in this GitHub repository 
 * **Images** folder. This folder stores images used in the socialDMtasks.qsf. You can download the images and use them in your own GitHub or Qualtrics account.

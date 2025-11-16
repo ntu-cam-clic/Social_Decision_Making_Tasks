@@ -95,7 +95,9 @@ To implement the above-mentioned tasks on Qualtrics, having a basic knowledge of
    For example, CSS can be used to set the positions and colors of custom buttons and texts. 
    <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/CSSwindow.png" alt="alt text" width="800">
     
-5.	Embedded data, which can be used to record extra information such as responses, accuracy, and timing of feedback in task trials (https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/embedded-data/).<br><br>
+5.	Embedded data, which can be used to record extra information such as responses, accuracy, and timing of feedback in task trials (https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/embedded-data/).<br>
+$${\color{red}Important \space note: \space Each \space value \space of \space an \space embedded \space data \space field \space should \space never \space exceed \space 20KB \space (20,000 \space bytes)!}$$
+<br>
    In the following figure, four variables (in the red rectangle) have been created as embedded data. Values of these variables will be recorded in the data file of Qualtrics (See the section "Preprocessing data from Qualtrics" below).
    <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/EmbeddedData.png" alt="alt text" width="800">
     

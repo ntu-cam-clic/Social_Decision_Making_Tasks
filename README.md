@@ -63,10 +63,13 @@ On Firefox, just need to click the padlock next to the URL, and select "**Clear 
 * <sub>Ultimatum game (as responder; **UGr**)
 
 ## Files in this GitHub repository 
-* **Images** folder. This folder stores images used in the socialDMtasks.qsf. You can download the images and use them in your own GitHub or Qualtrics account.
+* **Images** folder. This folder stores images for the 12 tasks used in QualtricsCode_socialDMtasks_Singapore_Dataset.qsf. You can download the images and use them in your own GitHub or Qualtrics account.
+* **Images_supplementaryTasks** folder. This folder stores images for the 10 tasks used in QualtricsCode_socialDMtasks_US_Dataset.qsf.
 * **example_Code_Data_Preprocessing** folder. This folder contains an example raw dataset from Qualtrics and scripts for preprocessing the raw data and generating the exclusion criteria filters.
-* **socialDMtasks.pdf**. This file shows each screen that a participant may see when performing these tasks on Qualtrics.
-* **QualtricsCode_socialDMtasks.qsf**. This is a “Qualtrics Survey Format” file, which contains the survey questions, Javascript, survey header, CSS, embedded data for the decision-making tasks and can be transferred to another Qualtrics account. Please note that if you import a .qsf file into your own account, the images in the original account will not be transferred. If the images in the original account are deleted, you will lose access to them. The images used in this QualtricsCode_socialDMtasks.qsf file are stored in the above "Images" folder. You can save these images to your own GitHub account and change the URL links in the header of the survey using the "updatingImageURLs.py" script below.
+* **social DM tasks (Singapore Dataset).pdf**. This file shows each screen that a participant may see when performing the 12 tasks on Qualtrics for the Singapore dataset.
+* **social DM tasks (U.S. Dataset).pdf**. This file shows each screen that a participant may see when performing the 10 tasks on Qualtrics for the U.S. dataset.
+* **QualtricsCode_socialDMtasks_Singapore_Dataset.qsf**. This is a “Qualtrics Survey Format” file, which contains the survey questions, Javascript, survey header, CSS, embedded data for the 12 decision-making tasks used to collect the Singapore dataset and can be transferred to another Qualtrics account. Please note that if you import a .qsf file into your own account, the images in the original account will not be transferred. If the images in the original account are deleted, you will lose access to them. The images used in this QualtricsCode_socialDMtasks_Singapore_Dataset.qsf file are stored in the above "Images" folder. You can save these images to your own GitHub account and change the URL links in the header of the survey using the "updatingImageURLs.py" script below.
+* **QualtricsCode_socialDMtasks_US_Dataset.qsf**. This is a .qsf file contains the survey questions, Javascript, survey header, CSS, embedded data for the 10 decision-making tasks used to collect the U.S. dataset and can be transferred to another Qualtrics account. The images used in this .qsf file are stored in the above "Images_supplementaryTasks" folder.
 * **updatingImageURLs.py**. If you copy the images to your own GitHub account, this script can be used to update the URL links to all the images.
 
 

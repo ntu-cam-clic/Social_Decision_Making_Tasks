@@ -27,7 +27,9 @@ You are suggested to install Firefox to try this link as it is easy to clear coo
 On Firefox, just need to click the padlock next to the URL, and select "**Clear cookies and site data**".)
 
 The following tasks have two versions:
-* Risk preference task (positive domain; **PRp**) [**Version 1**: points represented by balls in bags; reward structure: safe: 10, risky:15&8; **Version 2**: points represented by pie charts; reward structure: safe: 10, risky:15&5]
+* Risk preference task (positive domain; **PRp**)
+  [**Version 1**: points represented by balls in bags; reward structure: safe: 10, risky:15&8
+  **Version 2**: points represented by pie charts; reward structure: safe: 10, risky:15&5]
 * Risk preference task (negative domain; **RPn**) [**Version 1**: points represented with balls in bags; **Version 2**: points represented with pie charts]
 * Risky dictator game (**RD**)
 * Trust game (with no choice history; **TGnh**)

@@ -1,7 +1,7 @@
 # QualGames: Implementation of Decision-Making Tasks on Qualtrics
 
 Scripts and images for implementing the following 15 decision-making tasks on Qualtrics.
-We also share scripts for preprocessing the raw data from these task (e.g., calculating scores for each task and each participant).
+We also share scripts for preprocessing the raw data from these tasks (e.g., calculating scores for each task and each participant).
 
 
 ## Social decision-making tasks

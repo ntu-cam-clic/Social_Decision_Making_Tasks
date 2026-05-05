@@ -164,26 +164,13 @@ Since the current battery does not support synchronous games (i.e., two or more 
 Using the social value orientation task as an example, users can first import the file QualtricsCode_socialDMtasks_template_SVO(Player_B_version).qsf into their Qualtrics account.
 
 Next, organize participants’ choices from the original social value orientation task into a .csv file, with each row corresponding to one participant (each participant makes six choices), for example:
-7	1	9	9	1	1
-1	9	9	1	5	9
-9	1	9	9	1	1
-1	9	9	9	1	1
-1	9	9	7	2	1
-9	1	9	1	5	9
+
 <img width="385" height="121" alt="image" src="https://github.com/user-attachments/assets/fc3a9224-5a37-428f-bbd1-c57d264271a2" />
 
 Upload the .csv file to the Qualtrics Library and obtain the file’s URL. Then, open the survey header in Qualtrics and replace the existing URL with your own.
+<img width="624" height="513" alt="image" src="https://github.com/user-attachments/assets/90f11968-a21f-4810-82b2-4c887a4b7a23" />
 
-Important: Do not include any identifiable participant information in the .csv file, as anyone with the link can access its contents.
-
-"// load the csv file with participants responses
-async function fetchCSVUntilSucceeded() {
-  let success = false;
-  while(!success) {
-    try {
-      const response = await fetch('https://ntusingapore.qualtrics.com/ControlPanel/File.php?F=F_g43VDS9qq8DkrWe');
-      const csvData = await response.text(); // Get as text
-"
+$${\color{red}Important:}$$ Do not include any identifiable participant information in the .csv file, as anyone with the link can access its contents.
 
 
 

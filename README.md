@@ -157,3 +157,33 @@ After you have collected some data, you can export them into your local drive an
 Please select “Use numeric values” when you download the data file from Qualtrics:
 
 <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/downloadDatatable.png" alt="alt text" width="800">
+
+## Setting up the Player B version of the social value orientation task (real participants as social partners)
+Since the current battery does not support synchronous games (i.e., two or more participants interacting in real time), the points received by the social partner (Player B) can be determined after the original participants (Player A) have completed their choices. These choice data can then be uploaded to Qualtrics and used to determine Player B’s outcomes.
+
+Using the social value orientation task as an example, users can first import the file QualtricsCode_socialDMtasks_template_SVO(Player_B_version).qsf into their Qualtrics account.
+
+Next, organize participants’ choices from the original social value orientation task into a .csv file, with each row corresponding to one participant (each participant makes six choices), for example:
+7	1	9	9	1	1
+1	9	9	1	5	9
+9	1	9	9	1	1
+1	9	9	9	1	1
+1	9	9	7	2	1
+9	1	9	1	5	9
+<img width="385" height="121" alt="image" src="https://github.com/user-attachments/assets/fc3a9224-5a37-428f-bbd1-c57d264271a2" />
+
+Upload the .csv file to the Qualtrics Library and obtain the file’s URL. Then, open the survey header in Qualtrics and replace the existing URL with your own.
+
+Important: Do not include any identifiable participant information in the .csv file, as anyone with the link can access its contents.
+
+"// load the csv file with participants responses
+async function fetchCSVUntilSucceeded() {
+  let success = false;
+  while(!success) {
+    try {
+      const response = await fetch('https://ntusingapore.qualtrics.com/ControlPanel/File.php?F=F_g43VDS9qq8DkrWe');
+      const csvData = await response.text(); // Get as text
+"
+
+
+

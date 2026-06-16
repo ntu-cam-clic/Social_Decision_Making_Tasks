@@ -1,4 +1,4 @@
-# QualGames: Implementation of Decision-Making Tasks on Qualtrics
+# QualGames: A collection of Qualtrics-based behavioral decision-making tasks for psychology and behavioral economics research.
 
 Scripts and images for implementing the following 15 decision-making tasks on Qualtrics.
 We also share scripts for preprocessing the raw data from these tasks (e.g., calculating scores for each task and each participant).

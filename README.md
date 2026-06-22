@@ -114,6 +114,8 @@ Here are a few steps for transferring these tasks into your Qualtrics account (Y
 <img src="https://raw.githubusercontent.com/ntu-cam-clic/Social_Decision_Making_Tasks/main/README%20Figures/ImportQSF.png" alt="alt text" width="500">
 
 3.	Now you are ready to publish this project and run data collection.
+**Note:** When importing a QSF file, Qualtrics may renumber Question IDs (QIDs), particularly if the survey is merged with or copied into an existing project. If any code references specific QIDs, please verify them after import and before running the survey.
+   
 ## Tailoring the tasks on Qualtrics to suit your own study
 You can use a subset of the tasks and tailor them to your own needs. You can also create your own tasks from scratch by using our tasks as a template.
 

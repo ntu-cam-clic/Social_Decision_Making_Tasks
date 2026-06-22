@@ -1,4 +1,4 @@
-# This script accompanies the .qsf file for decision-making tasks and serves as an example script to process 
+# This script accompanies the "QualtricsCode_socialDMtasks_Singapore_Dataset.qsf" file for decision-making tasks and serves as an example script to process 
 # raw data exported from Qualtrics. You can find a small raw data file named rawDataFromQualtrics.csv in the same folder as this script. 
 # You can test the script on this dataset, which contains fake data from 4 participants.
 # If you run your own data, ensure that when you download data from Qualtrics, you choose the 'csv' file format and select 'Use numeric values'.
@@ -82,7 +82,9 @@ questionnaireNames=list(c('SVO'),
 );
 
 
-## QIDs for responses from Qualtrics and customary names for task rounds.
+## QIDs for responses from Qualtrics and customary names for task rounds. 
+## Note: When importing a QSF file, Qualtrics may renumber QIDs, particularly if the survey is merged with or copied into an existing project. 
+## If any code references specific QIDs, please verify them after import and before running the survey.
 ## We use QIDs and customary names to identify each variable.
 ## Here we list the QIDs for all the questions (including quizzes from some tasks)we want to include in our preprocessed data.
 ## For the task practice and formal rounds (except SVO), we use customary names in our embedded data to identify them, 

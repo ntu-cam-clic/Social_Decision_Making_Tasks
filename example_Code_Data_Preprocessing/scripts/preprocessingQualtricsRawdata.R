@@ -85,13 +85,12 @@ questionnaireNames=list(c('SVO'),
 ## QIDs for responses from Qualtrics and customary names for task rounds. 
 ## Note: When importing a QSF file, Qualtrics may renumber QIDs, particularly if the survey is merged with or copied into an existing project. 
 ## If any code references specific QIDs, please verify them after import and before running the survey.
+## If you create your own project, you need to check if the QIDs are changed for each question.
+## For example, the QID for the 1st round of SVO task is "QID290".
 ## We use QIDs and customary names to identify each variable.
 ## Here we list the QIDs for all the questions (including quizzes from some tasks)we want to include in our preprocessed data.
 ## For the task practice and formal rounds (except SVO), we use customary names in our embedded data to identify them, 
 ## so here we list sth like ('Prc','1','2','3','4','5'), the acronyms representing specific tasks will be added before the numbers in the following code.
-## If you directly import our .qsf file, the following QIDs are still correct. 
-## If you create your own project, you need to check if the QIDs are changed for each question.
-## For example, the QID for the 1st round of SVO task is "QID290".
 Responses_questionnaireQIDList       =list(c(290,292,294,296,298,300), #SVO
                                              list(c('328#1_1','328#1_2','797#1_1','797#1_2','799#1_1','799#1_2',  #these are QIDs of quizzes
                                                     '332#1_1','332#1_2','801#1_1','801#1_2','803#1_1','803#1_2',

@@ -6,7 +6,7 @@ chunk_output_type: console
 ---
 
 # This script accompanies the "QualGames_tasks_Singapore_Dataset.qsf" file for decision-making tasks and serves as an example script to process 
-# raw data exported from Qualtrics. You can find a small raw data file named rawDataFromQualtrics.csv in the same folder as this script. 
+# raw data exported from Qualtrics. You can find a small raw data file named rawDataFromQualtrics_Singapore_Dataset.csv in the same folder as this script. 
 # You can test the script on this dataset, which contains fake data from 4 participants.
 # If you run your own data, ensure that when you download data from Qualtrics, you choose the 'csv' file format and select 'Use numeric values'.
 # This script is modified from a more general script for preprocessing both conventional Qualtrics questionnaires and JavaScript tasks. 
@@ -15,13 +15,8 @@ chunk_output_type: console
 # such as the items in the social value orientation (SVO) task and the quiz questions in the prisoner's dilemma(PD) task.
 # If we extract the information of a variable through embedded data, we tend to call it a task round, such as the practice and formal 
 # rounds of the PD task. You can also check the comments on the variable "Responses_questionnaireQIDList" below for more information.
-# If you want to calculate transitivity for the SVO task, you need to have MATLAB and the Bioinformatics toolbox installed. 
-# Additionally, you need to add the function file transitivity_check_ranking.m into the MATLAB path.
-# If you don't want to run transitivity calculation, you can modify the code.
-
 
 # created by Shengchuang Feng, Mar, 2024; updated June, 2026
-
 
 ## installing and loading packages
 ```{R}

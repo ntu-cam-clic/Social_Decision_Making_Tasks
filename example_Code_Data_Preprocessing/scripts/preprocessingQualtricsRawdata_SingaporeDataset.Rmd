@@ -459,7 +459,7 @@ questionnaireTaskList         =list(c(0), #SVO
 
 myPath='D:/example_Code_Data_Preprocessing/';
 rawDataPath = 'rawData/';
-preprocessedDataPath = 'preprocessedData1/';
+preprocessedDataPath = 'preprocessedData_Singapore_Dataset/';
 
 setwd(paste0(myPath,rawDataPath));  # set the working directory
 rawdata = read.csv('exampleRawDataFromQualtrics_Singapore_Dataset.csv',check.names=FALSE);  # load the data from one Qualtrics account,check.names=FALSE to keep space in names

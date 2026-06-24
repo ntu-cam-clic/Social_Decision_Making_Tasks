@@ -890,6 +890,6 @@ for (t in c(loopStart:loopEnd)) {  # t is for the order of a questionnaire.
   write.matrix(format(Mat, scientific=FALSE), 
                file = paste0(myPath,preprocessedDataPath,questionnaireNames[t],".csv"), sep=",");
   
-} # end of questionnaires/tasks
+} # end of tasks
 ```
 

@@ -462,7 +462,7 @@ rawDataPath = 'rawData/';
 preprocessedDataPath = 'preprocessedData1/';
 
 setwd(paste0(myPath,rawDataPath));  # set the working directory
-rawdata = read.csv('rawDataFromQualtrics.csv',check.names=FALSE);  # load the data from one Qualtrics account,check.names=FALSE to keep space in names
+rawdata = read.csv('rawDataFromQualtrics_Singapore_Dataset.csv',check.names=FALSE);  # load the data from one Qualtrics account,check.names=FALSE to keep space in names
 alldata=rbind(rawdata[-c(1,2), ])  # delete the extra column that we don't need
 
 

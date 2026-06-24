@@ -172,7 +172,7 @@ transitivity_check_ranking = function(sub_data) {
 
 
 ```{R}
-## full names of questionnaires/tasks
+## full names of tasks
 questionnaireFullNames=c('Social Value Orientation (SVO)',
                                   'Prisoner\'s Dilemma-PD',
                                   'Stag Hunt-SH',
@@ -186,7 +186,7 @@ questionnaireFullNames=c('Social Value Orientation (SVO)',
                                   'Trust Game (no history)-TGnh',
                                   'Trust Game (as Player B)-TGb'
 );
-## Acronyms of questionnaires/tasks  
+## Acronyms of tasks  
 questionnaireNames=list(c('SVO'),
                         c('PD'), 
                         c('SH'),

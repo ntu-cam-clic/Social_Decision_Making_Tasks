@@ -2,7 +2,11 @@
 
 Scripts and images for implementing the following 15 decision-making tasks on Qualtrics.
 We also share scripts for preprocessing the raw data from these tasks (e.g., calculating scores for each task and each participant).
+If you use these tasks, scripts, or the accompanying dataset in your research, please cite:
 
+<sub> Feng, S., Melia, N., Abraham, A., Chan, Y. N., Lee, L. L., Pei, J. Y., Yap, H. S., Hung, D., Suckling, J., Teo, C. L., Robbins, T., Sahakian, B., Kourtzi, Z., Leong, V., Chen, A., Hendriks, H., Christopoulos, G., & the CLIC Phase 1 Consortium. (2026). QualGames: A Qualtrics implementation and a database of behavioral game theory tasks. Behavior Research Methods, 58(8), 219. https://doi.org/10.3758/s13428-026-03081-2
+
+<sub> Free full-text access (Springer SharedIt): https://rdcu.be/fslcj
 
 ## Social decision-making tasks
 * Risk preference task (positive domain; **RPp**)
